@@ -351,11 +351,13 @@ ${captionItems}
  *
  * The point of this figure is HONESTY about incomparable numbers. Each series
  * is drawn on its OWN axis with its OWN unit and its OWN source label — the
- * series are never merged onto a single scale, because the movement's
- * self-reported participant counts and Pew's population-survey percentages
+ * series are never merged onto a single scale, because e.g. a movement's
+ * self-reported participant counts and a survey's population percentages
  * measure different things by different methods. The <figcaption> carries the
  * per-series citations, so the bars never assert an uncited number on their
- * own.
+ * own. An explicit `unitNote` banner states, in the page's own words, that the
+ * series are NOT directly comparable — contested numbers are never silently
+ * unified (sourcing rules).
  *
  * Driven by the optional top-level `numbersChart` key:
  *
@@ -363,12 +365,12 @@ ${captionItems}
  *     heading?:  string      // default "Numbers"
  *     navLabel?: string      // default "Numbers" (nav bar link text)
  *     note?:     string      // section intro
- *     unitNote?: string      // the "these are not the same unit" banner
+ *     unitNote:  string      // the "not directly comparable" banner (required)
  *     series: [{
  *       label:       string  // what this series measures
  *       sourceLabel: string  // WHO reported it (movement vs external survey)
  *       unit:        string  // axis unit ("million participants", "% share")
- *       axisMax:     number  // top of THIS series' own axis
+ *       axisMax?:    number  // top of THIS series' own axis (default: max point)
  *       sources:     [refId]
  *       points: [{ year?: number|string, value: number, display: string }]
  *     }]
