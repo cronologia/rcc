@@ -5,7 +5,12 @@
     "description": "An open, source-referenced chronology of the Catholic Charismatic Renewal (Renovação Carismática Católica): the 1967 Duquesne origin, the papal receptions, the arrival and boom in Brazil (Rahm, Dougherty, Canção Nova, Shalom), the Brazilian bishops' 1994 guidelines, and the ICCRS→CHARIS institutional arc.",
     "language": "en",
     "lastUpdated": "2026-07-20",
-    "dataQualityNote": "Work-in-progress dataset compiled from public sources. Movement sources (RCC Brasil, Canção Nova, CHARIS, ICCRS) are labeled as such in the references; membership numbers are the movement's own and are attributed, never asserted; the 1969-vs-1972 Brazil-arrival divergence is recorded, not resolved; sociological characterizations ('pentecostalization', competition with CEBs) are attributed to their authors. Corrections against primary sources are welcome."
+    "dataQualityNote": "Work-in-progress dataset compiled from public sources. Movement sources (RCC Brasil, Canção Nova, CHARIS, ICCRS) are labeled as such in the references; membership numbers are the movement's own and are attributed, never asserted; the 1969-vs-1972 Brazil-arrival divergence is recorded, not resolved; sociological characterizations ('pentecostalization', competition with CEBs) are attributed to their authors. Corrections against primary sources are welcome.",
+    "vizChips": [
+      { "href": "#branch-timeline", "label": "🌱 Diffusion" },
+      { "href": "#lineage", "label": "🏛️ Institutional arc" },
+      { "href": "#numbers-chart", "label": "📊 Numbers" }
+    ]
   },
   "facts": [
     { "label": "What it is", "value": "A movement of 'baptism in the Holy Spirit' spirituality inside the Catholic Church — prayer groups, charisms, expressive worship — born among US university students in 1967 and today present worldwide, with Brazil among its largest national expressions.", "sources": ["wikipedia-ccr", "rccbrasil-historia"] },
@@ -75,6 +80,113 @@
       { "title": "Charismatic ≠ automatically conservative in politics", "text": "There is a 'Ministério Fé e Política' and there are RCC-linked candidates, but the case studies show heterogeneous and internally contested engagement — always attributed to the analysts.", "sources": ["redalyc-rccpr"] },
       { "title": "The movement ≠ the new communities", "text": "RCC Brasil (the ecclesial movement) and the 'new communities' (Canção Nova, Shalom, Obra de Maria) spring from the same charismatic current but hold distinct canonical statutes.", "sources": ["laityfamilylife-shalom", "cancaonova-reconhecimento"] },
       { "title": "CHARIS: new service, not fusion", "text": "Press accounts spoke of a 'fusion' of ICCRS and the Catholic Fraternity; the Vatican and CHARIS insist CHARIS is a new service that ended both predecessors (9 June 2019). This site uses the Vatican's formulation.", "sources": ["vaticannews-charis", "laityfamilylife-charis"] }
+    ]
+  },
+  "branchTimeline": {
+    "heading": "Diffusion of the Renewal — a branching timeline",
+    "navLabel": "Diffusion",
+    "note": "How the 1967 Duquesne experience spread: to the US campuses within weeks, to Brazil at the end of the decade, and — from the Brazilian trunk — into the new communities that now define the movement's public face. Fork years mark first foundation; the Brazil arrival date is itself contested and is flagged on the figure.",
+    "start": 1967,
+    "end": 2026,
+    "trunk": { "id": "duquesne", "label": "Duquesne Weekend", "start": 1967, "note": "About 25 Duquesne University students report baptism in the Holy Spirit at The Ark and the Dove (Gibsonia, PA) on 17–19 February 1967 — the founding moment of the Catholic Charismatic Renewal.", "sources": ["wikipedia-duquesne", "duquesne-libguide"] },
+    "branches": [
+      { "label": "US campuses — Notre Dame / Ann Arbor", "year": 1967, "from": "duquesne", "note": "Within weeks the movement reaches Notre Dame (March 1967, the Ranaghans) and, at Ann Arbor, the Word of God community is founded — the matrix of the covenant communities and of the annual Notre Dame conferences.", "sources": ["brill-notredame", "swc-origins", "wikipedia-wordofgod"] },
+      { "id": "brazil", "label": "Brazil — 1969 (movement) vs 1972 (diffusion)", "year": 1969, "from": "duquesne", "note": "Arrival is contested and recorded, not resolved: RCC Brasil dates Fr. Haroldo Rahm's first Campinas prayer group to the second half of 1969, and national diffusion via Fr. Eduardo Dougherty to 1972; the academic literature (Prandi) places the Brazilian take-off in the mid-1970s. The fork is drawn at the movement's 1969 date; the divergence is labeled on the figure.", "sources": ["rccbrasil-historia", "rcccampinas-historia", "prandi-sopro"] },
+      { "label": "Canção Nova", "year": 1978, "from": "brazil", "note": "Fr. (later Msgr.) Jonas Abib founds the Canção Nova community at Cachoeira Paulista — the future media powerhouse of the Brazilian Renewal.", "sources": ["vaticannews-abib", "cancaonova-quemsomos"] },
+      { "label": "Associação do Senhor Jesus", "year": 1980, "from": "brazil", "note": "Fr. Eduardo Dougherty founds the Associação do Senhor Jesus (Valinhos): publications, music and television.", "sources": ["wikipedia-dougherty", "portalasj"] },
+      { "label": "Comunidade Católica Shalom", "year": 1982, "from": "brazil", "note": "Moysés Louro de Azevedo Filho opens the 'evangelizing snack bar' in Fortaleza — birth of the Shalom community (definitive pontifical recognition 2012).", "sources": ["wikipedia-shalom", "laityfamilylife-shalom"] },
+      { "label": "Obra de Maria", "year": 1990, "from": "brazil", "note": "Gilberto Gomes Barbosa founds the Obra de Maria community in Recife, focused on pilgrimages and missions.", "sources": ["wikicn-obrademaria", "correio-obrademaria"] }
+    ]
+  },
+  "lineage": {
+    "heading": "Institutional arc",
+    "navLabel": "Institutional arc",
+    "note": "Two parallel institutional lines. The international service passed from ICCRO to ICCRS (statutes 1993) to CHARIS (2019) — the Vatican's own formulation is that CHARIS is a new service, not a fusion, shown here as a dashed step rather than a continuation. The covenant-communities line runs from the Word of God (Ann Arbor, 1967) into the Sword of the Spirit federation, from which the Word of God withdrew in 1990.",
+    "edgeLegend": { "direct": "Direct continuation / founding", "indirect": "A distinct step — a new service or a withdrawal, not a fusion/continuation" },
+    "trees": [
+      {
+        "title": "International service (the Rome office)",
+        "summary": "From the movement's coordinating office to the Holy See's single international service.",
+        "sources": ["iccrs-about", "vaticannews-charis"],
+        "root": {
+          "name": "ICCRO",
+          "detail": "International Catholic Charismatic Renewal Office — Brussels, then Rome",
+          "sources": ["iccrs-about"],
+          "children": [
+            {
+              "name": "ICCRS",
+              "detail": "statutes approved by the Pontifical Council for the Laity, 14 September 1993",
+              "sources": ["iccrs-about", "laici-iccrs"],
+              "children": [
+                {
+                  "name": "CHARIS",
+                  "detail": "instituted 2019 by the Dicastery for Laity, Family and Life",
+                  "edge": "indirect",
+                  "edgeLabel": "new service, not fusion",
+                  "status": "ICCRS and the Catholic Fraternity ceased activities at Pentecost 2019; the Vatican frames CHARIS as a new service, not a fusion of the two.",
+                  "sources": ["vaticannews-charis", "laityfamilylife-charis"]
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "title": "Covenant communities (international)",
+        "summary": "The Word of God matrix, the Sword of the Spirit federation, and the 1990 withdrawal.",
+        "sources": ["wikipedia-wordofgod", "wikipedia-sots"],
+        "root": {
+          "name": "Word of God",
+          "detail": "Ann Arbor, 1967 — matrix of the covenant communities",
+          "sources": ["wikipedia-wordofgod"],
+          "children": [
+            {
+              "name": "Sword of the Spirit",
+              "detail": "federation of covenant communities, 1982/83",
+              "sources": ["wikipedia-sots"],
+              "children": [
+                {
+                  "name": "Word of God withdraws",
+                  "detail": "1990",
+                  "edge": "indirect",
+                  "edgeLabel": "1990 withdrawal",
+                  "status": "The Word of God disaffiliated from the Sword of the Spirit in 1990; a faction led by Stephen Clark kept the affiliation. Contemporary press (Christianity Today 1991, National Catholic Reporter 1997) described 'heavy shepherding' practices; co-founder Ralph Martin (1991) called the disciplines 'an ill-advised venture' — documented criticism, labeled as such.",
+                  "sources": ["wikipedia-sots", "wikipedia-wordofgod", "ct-1991-communities", "ncr-1997-communities"]
+                }
+              ]
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "numbersChart": {
+    "heading": "How big is the Renewal? — contested numbers",
+    "navLabel": "Numbers",
+    "note": "Two different questions, two different methods. The movement counts its own participants; Pew surveys the whole population. Both bear on 'how big is the Brazilian Renewal', but they are not the same measurement — so each series keeps its own axis, its own unit and its own source label, and they are never stacked on one scale.",
+    "unitNote": "These series use different units (absolute participants vs. share of a population) and different methods (movement self-report vs. external survey). They are shown on separate axes and are not directly comparable — only their sources make either number meaningful.",
+    "series": [
+      {
+        "label": "Brazilian participants — the movement's own estimate",
+        "sourceLabel": "RCC Brasil — movement self-report",
+        "unit": "million participants",
+        "axisMax": 4,
+        "sources": ["rccbrasil-historia"],
+        "points": [
+          { "year": 1994, "value": 3.8, "display": "≈ 3.8 million participants (1994, self-reported)" }
+        ]
+      },
+      {
+        "label": "'Renewalists' in Brazil — an external survey",
+        "sourceLabel": "Pew Research Center — 'Spirit and Power' survey",
+        "unit": "% share",
+        "axisMax": 100,
+        "sources": ["pew-2006", "pew-2007"],
+        "points": [
+          { "year": 2006, "value": 50, "display": "≈ half of Brazil's population are 'renewalists'" },
+          { "year": 2006, "value": 50, "display": "more than half of Brazilian Catholics adopt charismatic practices" }
+        ]
+      }
     ]
   },
   "references": [
