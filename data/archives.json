@@ -1,0 +1,294 @@
+{
+  "generatedBy": "scripts/archive-refs.js",
+  "updatedAt": "2026-07-24",
+  "snapshots": {
+    "http://wiki.cancaonova.com/index.php/Comunidade_Obra_de_Maria": {
+      "refId": "wikicn-obrademaria",
+      "archiveUrl": "https://web.archive.org/web/20220311084852/http://wiki.cancaonova.com/index.php/Comunidade_Obra_de_Maria",
+      "timestamp": "20220311084852",
+      "checkedAt": "2026-07-24"
+    },
+    "http://www.iccrs.org/en/about-iccrs/": {
+      "refId": "iccrs-about",
+      "archiveUrl": "https://web.archive.org/web/20190228230920/http://www.iccrs.org:80/en/about-iccrs/",
+      "timestamp": "20190228230920",
+      "checkedAt": "2026-07-24"
+    },
+    "https://assessoria.cancaonova.com/notas/comunidade-cancao-nova-comunica-o-falecimento-de-monsenhor-jonas-abib-2/": {
+      "refId": "cancaonova-nota",
+      "archiveUrl": "https://web.archive.org/web/20260317151446/https://assessoria.cancaonova.com/notas/comunidade-cancao-nova-comunica-o-falecimento-de-monsenhor-jonas-abib-2/",
+      "timestamp": "20260317151446",
+      "checkedAt": "2026-07-24"
+    },
+    "https://brill.com/display/book/9789004461680/BP000008.xml": {
+      "refId": "brill-notredame",
+      "archiveUrl": "https://web.archive.org/web/20230412060907/https://brill.com/display/book/9789004461680/BP000008.xml",
+      "timestamp": "20230412060907",
+      "checkedAt": "2026-07-24"
+    },
+    "https://cnlb.org.br/conhecendo-as-organizacoes-filiadas-rcc/": {
+      "refId": "cnlb-rcc",
+      "archiveUrl": "https://web.archive.org/web/20250622191035/https://cnlb.org.br/conhecendo-as-organizacoes-filiadas-rcc/",
+      "timestamp": "20250622191035",
+      "checkedAt": "2026-07-24"
+    },
+    "https://comunidadecancaonova.com/cancao-nova-quem-somos/": {
+      "refId": "cancaonova-quemsomos",
+      "archiveUrl": "https://web.archive.org/web/20260412071524/https://comunidadecancaonova.com/cancao-nova-quem-somos/",
+      "timestamp": "20260412071524",
+      "checkedAt": "2026-07-24"
+    },
+    "https://comunidadecancaonova.com/reconhecimento-pontificio/": {
+      "refId": "cancaonova-reconhecimento",
+      "archiveUrl": "https://web.archive.org/web/20260309113646/https://comunidadecancaonova.com/reconhecimento-pontificio/",
+      "timestamp": "20260309113646",
+      "checkedAt": "2026-07-24"
+    },
+    "https://diocesedetaubate.org.br/documento-53-orientacoes-pastorais-sobre-a-renovacao-carismatica-catolica/": {
+      "refId": "taubate-doc53",
+      "archiveUrl": "https://web.archive.org/web/20260411172411/https://diocesedetaubate.org.br/documento-53-orientacoes-pastorais-sobre-a-renovacao-carismatica-catolica/",
+      "timestamp": "20260411172411",
+      "checkedAt": "2026-07-24"
+    },
+    "https://efosm.wordpress.com/wp-content/uploads/2013/02/cnbb-doc-53-e28093-orientac3a7c3b5es-pastorais-sobre-a-renovac3a7c3a3o-carismc3a1tica-catc3b3lica.pdf": {
+      "refId": "doc53-pdf",
+      "archiveUrl": "https://web.archive.org/web/20250723001859/https://efosm.wordpress.com/wp-content/uploads/2013/02/cnbb-doc-53-e28093-orientac3a7c3b5es-pastorais-sobre-a-renovac3a7c3a3o-carismc3a1tica-catc3b3lica.pdf",
+      "timestamp": "20250723001859",
+      "checkedAt": "2026-07-24"
+    },
+    "https://en.wikipedia.org/wiki/Catholic_Charismatic_Renewal": {
+      "refId": "wikipedia-ccr",
+      "archiveUrl": "https://web.archive.org/web/20260706181833/https://en.wikipedia.org/wiki/Catholic_Charismatic_Renewal",
+      "timestamp": "20260706181833",
+      "checkedAt": "2026-07-24"
+    },
+    "https://en.wikipedia.org/wiki/Duquesne_Weekend": {
+      "refId": "wikipedia-duquesne",
+      "archiveUrl": "https://web.archive.org/web/20251017065154/https://en.wikipedia.org/wiki/Duquesne_Weekend",
+      "timestamp": "20251017065154",
+      "checkedAt": "2026-07-24"
+    },
+    "https://en.wikipedia.org/wiki/Eduardo_Dougherty": {
+      "refId": "wikipedia-dougherty",
+      "archiveUrl": "https://web.archive.org/web/20260209015905/https://en.wikipedia.org/wiki/Eduardo_Dougherty",
+      "timestamp": "20260209015905",
+      "checkedAt": "2026-07-24"
+    },
+    "https://en.wikipedia.org/wiki/M%C3%BAsicas_para_Louvar_ao_Senhor": {
+      "refId": "wikipedia-rossi-album",
+      "archiveUrl": "https://web.archive.org/web/20250929141530/https://en.wikipedia.org/wiki/M%C3%BAsicas_para_Louvar_ao_Senhor",
+      "timestamp": "20250929141530",
+      "checkedAt": "2026-07-24"
+    },
+    "https://en.wikipedia.org/wiki/People_of_Praise": {
+      "refId": "wikipedia-peopleofpraise",
+      "archiveUrl": "https://web.archive.org/web/20260711171256/https://en.wikipedia.org/wiki/People_of_Praise",
+      "timestamp": "20260711171256",
+      "checkedAt": "2026-07-24"
+    },
+    "https://en.wikipedia.org/wiki/Sword_of_the_Spirit": {
+      "refId": "wikipedia-sots",
+      "archiveUrl": "https://web.archive.org/web/20260521010052/https://en.wikipedia.org/wiki/Sword_of_the_Spirit",
+      "timestamp": "20260521010052",
+      "checkedAt": "2026-07-24"
+    },
+    "https://en.wikipedia.org/wiki/Word_of_God_(community)": {
+      "refId": "wikipedia-wordofgod",
+      "archiveUrl": "https://web.archive.org/web/20251025114756/https://en.wikipedia.org/wiki/Word_of_God_(community)",
+      "timestamp": "20251025114756",
+      "checkedAt": "2026-07-24"
+    },
+    "https://formation.charis.international/pages/speakers": {
+      "refId": "charis-speakers",
+      "archiveUrl": "https://web.archive.org/web/20230606033258/https://formation.charis.international/pages/speakers",
+      "timestamp": "20230606033258",
+      "checkedAt": "2026-07-24"
+    },
+    "https://guides.library.duq.edu/CCR": {
+      "refId": "duquesne-libguide",
+      "archiveUrl": "https://web.archive.org/web/20260523173647/https://guides.library.duq.edu/CCR",
+      "timestamp": "20260523173647",
+      "checkedAt": "2026-07-24"
+    },
+    "https://natcath.org/NCR_Online/archives2/1997b/041897/041897c.htm": {
+      "refId": "ncr-1997-communities",
+      "archiveUrl": "https://web.archive.org/web/20250327172648/https://natcath.org/NCR_Online/archives2/1997b/041897/041897c.htm",
+      "timestamp": "20250327172648",
+      "checkedAt": "2026-07-24"
+    },
+    "https://portalasj.com.br/quem-somos/": {
+      "refId": "portalasj",
+      "archiveUrl": "https://web.archive.org/web/20250426171847/https://portalasj.com.br/quem-somos/",
+      "timestamp": "20250426171847",
+      "checkedAt": "2026-07-24"
+    },
+    "https://press.vatican.va/content/salastampa/en/bollettino/pubblico/2017/06/03/170603g.html": {
+      "refId": "salastampa-2017",
+      "archiveUrl": "https://web.archive.org/web/20260331144215/https://press.vatican.va/content/salastampa/en/bollettino/pubblico/2017/06/03/170603g.html",
+      "timestamp": "20260331144215",
+      "checkedAt": "2026-07-24"
+    },
+    "https://press.vatican.va/content/salastampa/it/documentation/cardinali_biografie/cardinali_bio_cantalamessa_r.html": {
+      "refId": "vatican-cantalamessa-bio",
+      "archiveUrl": "https://web.archive.org/web/20251115160813/https://press.vatican.va/content/salastampa/it/documentation/cardinali_biografie/cardinali_bio_cantalamessa_r.html",
+      "timestamp": "20251115160813",
+      "checkedAt": "2026-07-24"
+    },
+    "https://pt.wikipedia.org/wiki/Comunidade_Cat%C3%B3lica_Shalom": {
+      "refId": "wikipedia-shalom",
+      "archiveUrl": "https://web.archive.org/web/20260210213908/https://pt.wikipedia.org/wiki/Comunidade_Cat%C3%B3lica_Shalom",
+      "timestamp": "20260210213908",
+      "checkedAt": "2026-07-24"
+    },
+    "https://pt.wikipedia.org/wiki/Rede_S%C3%A9culo_21": {
+      "refId": "wikipedia-seculo21",
+      "archiveUrl": "https://web.archive.org/web/20260706065305/https://pt.wikipedia.org/wiki/Rede_S%C3%A9culo_21",
+      "timestamp": "20260706065305",
+      "checkedAt": "2026-07-24"
+    },
+    "https://rccbrasil.org.br/blog/a-renovacao-carismatica-catolica-do-brasil-nas-eleicoes-2018/": {
+      "refId": "rccbrasil-eleicoes",
+      "archiveUrl": "https://web.archive.org/web/20260117170612/https://rccbrasil.org.br/blog/a-renovacao-carismatica-catolica-do-brasil-nas-eleicoes-2018/",
+      "timestamp": "20260117170612",
+      "checkedAt": "2026-07-24"
+    },
+    "https://rccbrasil.org.br/institucional/index.php/artigos/1378-nota-de-falecimento-padre-haroldo-rahm": {
+      "refId": "rccbrasil-rahm",
+      "archiveUrl": "https://web.archive.org/web/20191206102538/https://www.rccbrasil.org.br/institucional/index.php/artigos/1378-nota-de-falecimento-padre-haroldo-rahm",
+      "timestamp": "20191206102538",
+      "checkedAt": "2026-07-24"
+    },
+    "https://rccbrasil.org.br/nossa-historia/": {
+      "refId": "rccbrasil-historia",
+      "archiveUrl": "https://web.archive.org/web/20260720015041/https://rccbrasil.org.br/nossa-historia/",
+      "timestamp": "20260720015041",
+      "checkedAt": "2026-07-24"
+    },
+    "https://www.charis.international/en/the-malines-documents-and-cardinal-suenens/": {
+      "refId": "charis-malines",
+      "archiveUrl": "https://web.archive.org/web/20211008134506/https://www.charis.international/en/the-malines-documents-and-cardinal-suenens/",
+      "timestamp": "20211008134506",
+      "checkedAt": "2026-07-24"
+    },
+    "https://www.christianitytoday.com/1991/09/charismatic-communities-split-by-controversy/": {
+      "refId": "ct-1991-communities",
+      "archiveUrl": "https://web.archive.org/web/20260720015321/https://www.christianitytoday.com/1991/09/charismatic-communities-split-by-controversy/",
+      "timestamp": "20260720015321",
+      "checkedAt": "2026-07-24"
+    },
+    "https://www.correiobraziliense.com.br/brasil/2025/01/7038766-obra-de-maria-um-reduto-de-fe-e-evangelizacao-em-meio-a-natureza.html": {
+      "refId": "correio-obrademaria",
+      "archiveUrl": "https://web.archive.org/web/20250207235204/https://www.correiobraziliense.com.br/brasil/2025/01/7038766-obra-de-maria-um-reduto-de-fe-e-evangelizacao-em-meio-a-natureza.html",
+      "timestamp": "20250207235204",
+      "checkedAt": "2026-07-24"
+    },
+    "https://www.edicoescnbb.com.br/cnbb-e-pastoral/documentos-da-cnbb": {
+      "refId": "cnbb-doc53",
+      "archiveUrl": "https://web.archive.org/web/20260512075432/https://www.edicoescnbb.com.br/cnbb-e-pastoral/documentos-da-cnbb",
+      "timestamp": "20260512075432",
+      "checkedAt": "2026-07-24"
+    },
+    "https://www.euppublishing.com/doi/10.3366/swc.2019.0267": {
+      "refId": "swc-origins",
+      "archiveUrl": "https://web.archive.org/web/20241114003655/https://www.euppublishing.com/doi/10.3366/swc.2019.0267",
+      "timestamp": "20241114003655",
+      "checkedAt": "2026-07-24"
+    },
+    "https://www.laici.va/content/laici/en/sezioni/associazioni/repertorio/serv-rinnovamentocarismatico.html": {
+      "refId": "laici-iccrs",
+      "archiveUrl": "https://web.archive.org/web/20250807123932/http://www.laici.va/content/laici/en/sezioni/associazioni/repertorio/serv-rinnovamentocarismatico.html",
+      "timestamp": "20250807123932",
+      "checkedAt": "2026-07-24"
+    },
+    "https://www.laityfamilylife.va/content/laityfamilylife/en/associazioni-e-movimenti/repertorio/comunita-cattolica-shalom-.html": {
+      "refId": "laityfamilylife-shalom",
+      "archiveUrl": "https://web.archive.org/web/20260620105259/https://www.laityfamilylife.va/content/laityfamilylife/en/associazioni-e-movimenti/repertorio/comunita-cattolica-shalom-.html",
+      "timestamp": "20260620105259",
+      "checkedAt": "2026-07-24"
+    },
+    "https://www.laityfamilylife.va/content/laityfamilylife/en/news/2019/entra-in-azione-charis--il-servizio-unico-internazionale-al-rinn.html": {
+      "refId": "laityfamilylife-charis",
+      "archiveUrl": "https://web.archive.org/web/20250724011927/https://www.laityfamilylife.va/content/laityfamilylife/en/news/2019/entra-in-azione-charis--il-servizio-unico-internazionale-al-rinn.html",
+      "timestamp": "20250724011927",
+      "checkedAt": "2026-07-24"
+    },
+    "https://www.pewresearch.org/religion/2006/10/05/spirit-and-power/": {
+      "refId": "pew-2006",
+      "archiveUrl": "https://web.archive.org/web/20260708072023/https://www.pewresearch.org/religion/2006/10/05/spirit-and-power/",
+      "timestamp": "20260708072023",
+      "checkedAt": "2026-07-24"
+    },
+    "https://www.pewresearch.org/religion/2007/04/19/pope-to-visit-pentecostalized-brazil/": {
+      "refId": "pew-2007",
+      "archiveUrl": "https://web.archive.org/web/20260123015528/https://www.pewresearch.org/religion/2007/04/19/pope-to-visit-pentecostalized-brazil/",
+      "timestamp": "20260123015528",
+      "checkedAt": "2026-07-24"
+    },
+    "https://www.pucsp.br/rever/rv1_2008/t_silveira.htm": {
+      "refId": "rever-pucsp",
+      "archiveUrl": "https://web.archive.org/web/20240527033842/https://www.pucsp.br/rever/rv1_2008/t_silveira.htm",
+      "timestamp": "20240527033842",
+      "checkedAt": "2026-07-24"
+    },
+    "https://www.scielo.br/j/rs/a/ydp8rBvBTZv5YSmTCS9KNGx/?format=pdf&lang=pt": {
+      "refId": "scielo-rcc",
+      "archiveUrl": "https://web.archive.org/web/20251211150037/http://www.scielo.br/j/rs/a/ydp8rBvBTZv5YSmTCS9KNGx/?format=pdf&lang=pt",
+      "timestamp": "20251211150037",
+      "checkedAt": "2026-07-24"
+    },
+    "https://www.vatican.va/content/francesco/en/speeches/2017/june/documents/papa-francesco_20170603_veglia-pentecoste.html": {
+      "refId": "vatican-francis-2017",
+      "archiveUrl": "https://web.archive.org/web/20260602002119/https://www.vatican.va/content/francesco/en/speeches/2017/june/documents/papa-francesco_20170603_veglia-pentecoste.html",
+      "timestamp": "20260602002119",
+      "checkedAt": "2026-07-24"
+    },
+    "https://www.vatican.va/content/francesco/en/speeches/2019/june/documents/papa-francesco_20190608_charis.html": {
+      "refId": "vatican-francis-2019",
+      "archiveUrl": "https://web.archive.org/web/20260207225952/https://www.vatican.va/content/francesco/en/speeches/2019/june/documents/papa-francesco_20190608_charis.html",
+      "timestamp": "20260207225952",
+      "checkedAt": "2026-07-24"
+    },
+    "https://www.vatican.va/content/john-paul-ii/en/speeches/1981/may/documents/hf_jp-ii_spe_19810507_rinnovamento-carismatico.html": {
+      "refId": "vatican-jp2-1981",
+      "archiveUrl": "https://web.archive.org/web/20260113032459/https://www.vatican.va/content/john-paul-ii/en/speeches/1981/may/documents/hf_jp-ii_spe_19810507_rinnovamento-carismatico.html",
+      "timestamp": "20260113032459",
+      "checkedAt": "2026-07-24"
+    },
+    "https://www.vatican.va/content/leo-xiv/en/speeches/2026/may/documents/20260530-carismatici.html": {
+      "refId": "vatican-leo-2026",
+      "archiveUrl": "https://web.archive.org/web/20260605203801/https://www.vatican.va/content/leo-xiv/en/speeches/2026/may/documents/20260530-carismatici.html",
+      "timestamp": "20260605203801",
+      "checkedAt": "2026-07-24"
+    },
+    "https://www.vatican.va/content/paul-vi/fr/speeches/1975/documents/hf_p-vi_spe_19750519_rinnovamento-carismatico.html": {
+      "refId": "vatican-paulvi-1975",
+      "archiveUrl": "https://web.archive.org/web/20260720015153/https://www.vatican.va/content/paul-vi/fr/speeches/1975/documents/hf_p-vi_spe_19750519_rinnovamento-carismatico.html",
+      "timestamp": "20260720015153",
+      "checkedAt": "2026-07-24"
+    },
+    "https://www.vaticannews.va/en/pope/news/2026-05/pope-leo-charismatic-renewal-address-spirit-lead-to-communion.html": {
+      "refId": "vaticannews-leo-2026",
+      "archiveUrl": "https://web.archive.org/web/20260531173759/https://www.vaticannews.va/en/pope/news/2026-05/pope-leo-charismatic-renewal-address-spirit-lead-to-communion.html",
+      "timestamp": "20260531173759",
+      "checkedAt": "2026-07-24"
+    },
+    "https://www.vaticannews.va/en/vatican-city/news/2019-06/charis-a-new-service-for-the-catholic-charismatic-renewal.html": {
+      "refId": "vaticannews-charis",
+      "archiveUrl": "https://web.archive.org/web/20250805105631/https://www.vaticannews.va/en/vatican-city/news/2019-06/charis-a-new-service-for-the-catholic-charismatic-renewal.html",
+      "timestamp": "20250805105631",
+      "checkedAt": "2026-07-24"
+    },
+    "https://www.vaticannews.va/pt/igreja/news/2022-12/faleceu-anos-monsenhor-jonas-abib-fundador-cancao-nova.html": {
+      "refId": "vaticannews-abib",
+      "archiveUrl": "https://web.archive.org/web/20250422072735/https://www.vaticannews.va/pt/igreja/news/2022-12/faleceu-anos-monsenhor-jonas-abib-fundador-cancao-nova.html",
+      "timestamp": "20250422072735",
+      "checkedAt": "2026-07-24"
+    },
+    "https://www.veritatis.com.br/orientacoes-pastorais-sobre-a-renovacao-carismatica-catolica-rcc/": {
+      "refId": "veritatis-doc53",
+      "archiveUrl": "https://web.archive.org/web/20260720015243/https://www.veritatis.com.br/orientacoes-pastorais-sobre-a-renovacao-carismatica-catolica-rcc/",
+      "timestamp": "20260720015243",
+      "checkedAt": "2026-07-24"
+    }
+  }
+}
