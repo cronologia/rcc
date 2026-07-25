@@ -10,6 +10,23 @@ Part of the [Cronologia](https://cronologia.github.io) family; built from the
 [`core`](https://github.com/cronologia/core) template. Single JSON source of
 truth (`data/chronology.json`), zero-dependency build, GitHub Pages.
 
+## Languages
+
+The site is published in three locales, each an independently indexable static
+page:
+
+| | |
+|---|---|
+| English (authoritative) | <https://cronologia.github.io/rcc/en/> |
+| Português | <https://cronologia.github.io/rcc/pt/> |
+| Español | <https://cronologia.github.io/rcc/es/> |
+
+`https://cronologia.github.io/rcc/` redirects to the visitor's locale, so older
+links keep working. **English is the version of record**; the Portuguese and
+Spanish pages are machine-translated from committed caches
+(`data/i18n/{pt,es}.json`, managed by `scripts/translate.js`) and say so in a
+banner at the top of every page. See `adr/0002-multilingual-pt-es.md`.
+
 ```bash
 node scripts/validate-data.js && node --test && node build.js
 ```
