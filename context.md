@@ -83,6 +83,23 @@ presidents · independent confirmation of 1980 for Cantalamessa's appointment
 text currently cited via a mirror — obtain the CNBB original.
 (`core/tools/unverified-report.py` regenerates this queue from the data.)
 
+## Finding the sources — `KEYWORDS.md`
+
+Orienting to the sources is not the same as knowing what to type. **`KEYWORDS.md`**
+is this repo's finding aid for searching them: the subject's names in English,
+Portuguese and Latin; the fact that the institutional body changed name twice
+(ICCRO → ICCRS 1993 → CHARIS 2019), so one term misses two periods; the terms
+that return **zero** hits despite the subject being present (`ICCRS`, `ICCRO`,
+`Cantalamessa`, `Suenens` across the whole vaulted transcript corpus); the ASR
+manglings the auto-caption transcripts produce (`Duane University` for
+Duquesne, `sunnin` for Suenens); the false friends (`carismátic*` in Portuguese
+is usually the everyday adjective); and the boundary pointers — CEBs and
+liberation theology belong to `cronologia/tl`. It is a finding aid, **not a
+dataset**: it makes no claims about the world, and listing a hostile source's
+vocabulary is not endorsement. Part of it is generated from
+`data/chronology.json`; the `## Search traps` section is hand-written and
+survives regeneration — extend it whenever a search misleads you.
+
 ## Key sources
 
 vatican.va speeches (Paul VI 1975, JPII 1981, Francis 2017/2019, Leo XIV

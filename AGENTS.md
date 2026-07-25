@@ -36,6 +36,12 @@ build.js                  Compiler: data/chronology.json (+ archives.json + i18n
                           -> docs/{en,pt,es}/ + root redirect stub + sitemap.xml + robots.txt
 test/                     node:test suites (build helpers + i18n helpers + data invariants
                           + per-locale SEO/disclaimer/switcher + docs/ drift check)
+KEYWORDS.md               Search vocabulary + "Search traps" — what the subject is called,
+                          which obvious searches return nothing, the ASR manglings seen in
+                          the vaulted transcripts, and which sibling repo owns an adjacent
+                          subject. Partly generated (`core/tools/build-keywords.py`); the
+                          hand-written traps live outside the markers. A finding aid, not
+                          a dataset — it makes no claims about the world
 adr/                      Architecture decision records for THIS repo
 .claude/skills/           VENDORED copy of cronologia/core skills/ (generated; + _synced.json)
 .github/workflows/deploy.yml       CI: validate, test, build, drift check, Pages deploy
@@ -70,6 +76,30 @@ Vendored under `.claude/skills/` and **generated**: fix them in
 | `release-work` | Branching, fast-forwarding, committing and pushing a wave of work. |
 | `bootstrap-project` | Standing up a *new* family repo (not normally needed here). |
 | `dossier-research` / `mine-video` | Research-side work: building a dossier, or mining video/transcripts for candidate facts. Anything they surface still enters the dataset through `ingest-report` + `sourcing-rules`. |
+
+## Searching, mining and research — read `KEYWORDS.md` first
+
+Before grepping a corpus, mining a transcript or starting a dossier, read
+**`KEYWORDS.md`**. The obvious search term for this subject frequently returns
+nothing: `ICCRS` and `ICCRO` score **zero** across all 121 vaulted transcripts
+and the 589-file COF corpus; `CHARIS` as a whole word scores **zero** in the
+transcript vault (every apparent hit is a substring of `charismatic` or
+`Eucharistic`); `Cantalamessa` and `Suenens` score zero although both are
+discussed at length — the auto-captions write `canel Mesa` and `sunnin`. The
+institutional name also *changed by date* (ICCRO → ICCRS 1993 → CHARIS 2019),
+so a search for one name silently drops the other two periods. `KEYWORDS.md`
+records these, the observed ASR manglings, the PT/EN/Latin variants, the
+false friends (`carismátic*` is usually the everyday adjective; `Obra de
+Maria` collides with an ordinary noun phrase; `rahm` matches `brahman`), and
+the boundary pointers to sibling repos. Add to its **`## Search traps`**
+section whenever a search misleads you — that section is hand-written and
+survives regeneration. Regenerate the mechanical sections with:
+
+```bash
+python3 core/tools/build-keywords.py rcc --out KEYWORDS.md
+```
+
+It is documentation only: it must never change the built `docs/`.
 
 ## Agent-side tooling (in `cronologia/core/tools/`)
 
