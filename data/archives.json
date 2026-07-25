@@ -1,6 +1,6 @@
 {
   "generatedBy": "scripts/archive-refs.js",
-  "updatedAt": "2026-07-24",
+  "updatedAt": "2026-07-25",
   "snapshots": {
     "http://wiki.cancaonova.com/index.php/Comunidade_Obra_de_Maria": {
       "refId": "wikicn-obrademaria",
@@ -25,6 +25,12 @@
       "archiveUrl": "https://web.archive.org/web/20230412060907/https://brill.com/display/book/9789004461680/BP000008.xml",
       "timestamp": "20230412060907",
       "checkedAt": "2026-07-24"
+    },
+    "https://cbn.com/article/life-transformation/fifty-years-catholic-charismatic-movement-1967-2017": {
+      "refId": "cbn-50years",
+      "archiveUrl": "https://web.archive.org/web/20230922182019/https://www2.cbn.com/article/life-transformation/fifty-years-catholic-charismatic-movement-1967-2017",
+      "timestamp": "20230922182019",
+      "checkedAt": "2026-07-25"
     },
     "https://cnlb.org.br/conhecendo-as-organizacoes-filiadas-rcc/": {
       "refId": "cnlb-rcc",
@@ -74,11 +80,41 @@
       "timestamp": "20260209015905",
       "checkedAt": "2026-07-24"
     },
+    "https://en.wikipedia.org/wiki/Elena_Guerra": {
+      "refId": "wikipedia-guerra",
+      "archiveUrl": "https://web.archive.org/web/20260704010510/https://en.wikipedia.org/wiki/Elena_Guerra",
+      "timestamp": "20260704010510",
+      "checkedAt": "2026-07-25"
+    },
+    "https://en.wikipedia.org/wiki/Emmanuel_Milingo": {
+      "refId": "wikipedia-milingo",
+      "archiveUrl": "https://web.archive.org/web/20260706072921/https://en.wikipedia.org/wiki/Emmanuel_Milingo",
+      "timestamp": "20260706072921",
+      "checkedAt": "2026-07-25"
+    },
+    "https://en.wikipedia.org/wiki/Francis_MacNutt": {
+      "refId": "wikipedia-macnutt",
+      "archiveUrl": "https://web.archive.org/web/20251230151952/https://en.wikipedia.org/wiki/Francis_MacNutt",
+      "timestamp": "20251230151952",
+      "checkedAt": "2026-07-25"
+    },
     "https://en.wikipedia.org/wiki/M%C3%BAsicas_para_Louvar_ao_Senhor": {
       "refId": "wikipedia-rossi-album",
       "archiveUrl": "https://web.archive.org/web/20250929141530/https://en.wikipedia.org/wiki/M%C3%BAsicas_para_Louvar_ao_Senhor",
       "timestamp": "20250929141530",
       "checkedAt": "2026-07-24"
+    },
+    "https://en.wikipedia.org/wiki/Michael_Scanlan_(priest)": {
+      "refId": "wikipedia-scanlan",
+      "archiveUrl": "https://web.archive.org/web/20260221162504/https://en.wikipedia.org/wiki/Michael_Scanlan_(priest)",
+      "timestamp": "20260221162504",
+      "checkedAt": "2026-07-25"
+    },
+    "https://en.wikipedia.org/wiki/Mother_of_God_Community": {
+      "refId": "wikipedia-motherofgod",
+      "archiveUrl": "https://web.archive.org/web/20260324182222/https://en.wikipedia.org/wiki/Mother_of_God_Community",
+      "timestamp": "20260324182222",
+      "checkedAt": "2026-07-25"
     },
     "https://en.wikipedia.org/wiki/People_of_Praise": {
       "refId": "wikipedia-peopleofpraise",
@@ -211,6 +247,18 @@
       "archiveUrl": "https://web.archive.org/web/20250724011927/https://www.laityfamilylife.va/content/laityfamilylife/en/news/2019/entra-in-azione-charis--il-servizio-unico-internazionale-al-rinn.html",
       "timestamp": "20250724011927",
       "checkedAt": "2026-07-24"
+    },
+    "https://www.pentecosttodayusa.org/malines-documents/": {
+      "refId": "pentecosttoday-malines",
+      "archiveUrl": "https://web.archive.org/web/20260317060319/https://www.pentecosttodayusa.org/malines-documents/",
+      "timestamp": "20260317060319",
+      "checkedAt": "2026-07-25"
+    },
+    "https://www.pentecosttodayusa.org/wp-content/uploads/2024/05/Letters-of-Blessed-Elena-to-Leo-XIII.pdf": {
+      "refId": "pentecosttoday-guerra-letters",
+      "archiveUrl": "https://web.archive.org/web/20250715212315/https://www.pentecosttodayusa.org/wp-content/uploads/2024/05/Letters-of-Blessed-Elena-to-Leo-XIII.pdf",
+      "timestamp": "20250715212315",
+      "checkedAt": "2026-07-25"
     },
     "https://www.pewresearch.org/religion/2006/10/05/spirit-and-power/": {
       "refId": "pew-2006",
