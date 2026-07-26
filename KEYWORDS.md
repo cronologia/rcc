@@ -33,6 +33,55 @@ corpora are referred to throughout, both in the private `cronologia/archive`:
   (`wc -w`). It is *not* an RCC corpus; it is a sibling project's, and that is
   exactly why its negative results below are worth knowing.
 
+### The corpus is incomplete — a zero can mean "not transcribed"
+
+A zero in the COF corpus is only evidence of absence if that aula was
+transcribed in full, and **31 of 585 were not**. Measured 2026-07-26 by comparing
+each transcript's word count against the archived audio duration
+(`archive/webcaptures/cof-audio-durations.json`, from the archive.org metadata
+API):
+
+| estimated coverage | aulas |
+|---|---|
+| 90–115% — effectively complete | **419** |
+| 75–90% | 107 |
+| 50–75% | 24 |
+| **below 50%** | **7** |
+
+The 31 below 75%, worst first:
+
+`COF513`(18%) `COF534`(34%) `COF154`(36%) `COF514`(38%) `COF157`(46%)
+`COF254`(47%) `COF571`(48%) `COF351`(52%) `COF523`(57%) `COF034`(58%)
+`COF525`(61%) `COF517`(61%) `COF462`(63%) `COF526`(63%) `COF528`(63%)
+`COF542`(63%) `COF453`(64%) `COF529`(65%) `COF389`(65%) `COF498`(65%)
+`COF175`(66%) `COF535`(66%) `COF543`(67%) `COF530`(69%) `COF267`(69%)
+`COF079`(70%) `COF524`(70%) `COF545`(70%) `COF516`(70%) `COF473`(71%)
+`COF531`(72%)
+
+**This qualifies every "measured zero" already published in this family** —
+`FSSPX` = 0, `Renovação Carismática` = 0, `Sociedade de São Pio X` = 3 and the
+rest. Those counts are over a corpus that is materially incomplete in at least
+31 places. Re-state such a result as *"not found in the transcribed portion"*
+rather than as absence, and check whether any low-coverage aula is in scope
+before concluding a topic is missing.
+
+**The reverse case exists too.** 28 aulas exceed 115%, which is impossible —
+there the *audio* is short, not the transcript. `COF229` is the extreme: 13,042
+transcript words against 41 minutes of archived audio, while the community index
+duration (1:38:35) agrees with the transcript and both archive.org mirrors carry
+the same truncated file. A preservation gap, not a transcription gap.
+
+**Method, stated because the numbers invite over-reading.** Coverage is
+`words / (audio minutes × 130)`, where 130 wpm is the *observed median* across
+585 aulas (stdev 19), not a constant — real rate varies with format (reading
+aloud, Q&A, dictation). **Treat 0.75–1.15 as within noise.** Only the extremes
+are robust: 18% and 239% cannot be explained by delivery style.
+
+**Directly relevant to this repo:** the corpus is not an RCC source
+(`Renovação Carismática` = 0 files), and this trap is why that zero is stated as
+*not found in the transcribed portion* rather than as proof of absence.
+
+
 ### Terms that return nothing
 
 | Search | Result | Search this instead |
