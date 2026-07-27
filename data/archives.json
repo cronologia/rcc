@@ -1,6 +1,6 @@
 {
   "generatedBy": "scripts/archive-refs.js",
-  "updatedAt": "2026-07-25",
+  "updatedAt": "2026-07-27",
   "snapshots": {
     "http://wiki.cancaonova.com/index.php/Comunidade_Obra_de_Maria": {
       "refId": "wikicn-obrademaria",
@@ -200,11 +200,29 @@
       "timestamp": "20260720015041",
       "checkedAt": "2026-07-24"
     },
+    "https://rcccampinas.org.br/nossahistoria": {
+      "refId": "rcccampinas-historia",
+      "archiveUrl": "https://web.archive.org/web/20260727100713/https://rcccampinas.org.br/nossahistoria",
+      "timestamp": "20260727100713",
+      "checkedAt": "2026-07-27"
+    },
+    "https://reginaldoprandi.fflch.usp.br/livro-sopro": {
+      "refId": "prandi-sopro",
+      "archiveUrl": "https://web.archive.org/web/20260727100820/https://reginaldoprandi.fflch.usp.br/livro-sopro",
+      "timestamp": "20260727100820",
+      "checkedAt": "2026-07-27"
+    },
     "https://www.charis.international/en/the-malines-documents-and-cardinal-suenens/": {
       "refId": "charis-malines",
       "archiveUrl": "https://web.archive.org/web/20211008134506/https://www.charis.international/en/the-malines-documents-and-cardinal-suenens/",
       "timestamp": "20211008134506",
       "checkedAt": "2026-07-24"
+    },
+    "https://www.christianitytoday.com/1975/06/pentecost-in-st-peters/": {
+      "refId": "ct-1975",
+      "archiveUrl": "https://web.archive.org/web/20260727100914/https://www.christianitytoday.com/1975/06/pentecost-in-st-peters/",
+      "timestamp": "20260727100914",
+      "checkedAt": "2026-07-27"
     },
     "https://www.christianitytoday.com/1991/09/charismatic-communities-split-by-controversy/": {
       "refId": "ct-1991-communities",
@@ -271,6 +289,12 @@
       "archiveUrl": "https://web.archive.org/web/20260123015528/https://www.pewresearch.org/religion/2007/04/19/pope-to-visit-pentecostalized-brazil/",
       "timestamp": "20260123015528",
       "checkedAt": "2026-07-24"
+    },
+    "https://www.pewresearch.org/religion/2014/11/13/religion-in-latin-america/": {
+      "refId": "pew-2014",
+      "archiveUrl": "https://web.archive.org/web/20260725222949/https://www.pewresearch.org/religion/2014/11/13/religion-in-latin-america/",
+      "timestamp": "20260725222949",
+      "checkedAt": "2026-07-27"
     },
     "https://www.pucsp.br/rever/rv1_2008/t_silveira.htm": {
       "refId": "rever-pucsp",
