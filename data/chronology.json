@@ -533,11 +533,11 @@
       "dateVerified": false,
       "place": "Brazil",
       "title": "The RCC and Brazilian politics (analysts' account)",
-      "text": "Social scientists (Carranza and others) describe the RCC's 'Ministério Fé e Política' backing charismatic candidates — e.g. federal deputy Diego Garcia (elected 2014, 2018) — as a response to Pentecostal political growth; the studies also record heterogeneous and internally contested engagement. The framing is the researchers', attributed.",
+      "text": "Social scientists (Carranza and others) describe the RCC's 'Ministério Fé e Política' backing charismatic candidates — e.g. federal deputy Diego Garcia (elected 2014, 2018) — as a response to Pentecostal political growth; the studies also record heterogeneous and internally contested engagement. The framing is the researchers', attributed. The movement's own governing text sets limits the analysts' framing does not describe: Instrução Normativa n.º 04/2021 of the RCC Brasil National Council (20 January 2021, revoking IN 03/2019) regulates the ministry during general elections and requires that MFP coordinators at every level hold no elective mandate, no commissioned or parliamentary advisory post, and no place on a party executive — while warning coordinators against 'o risco de instrumentalização de sua função' for party-political ends. Both accounts are recorded as their authors state them; neither is adjudicated here.",
       "sources": [
         "redalyc-rccpr",
         "rever-pucsp",
-        "rccbrasil-eleicoes"
+        "rccbrasil-in04-2021"
       ],
       "threads": [
         "measurement",
@@ -1361,11 +1361,11 @@
       "type": "academic"
     },
     {
-      "id": "rccbrasil-eleicoes",
-      "title": "A RCC do Brasil nas eleições 2018",
-      "url": "https://rccbrasil.org.br/blog/a-renovacao-carismatica-catolica-do-brasil-nas-eleicoes-2018/",
-      "publisher": "RCC Brasil (movement source)",
-      "type": "movement"
+      "id": "rccbrasil-in04-2021",
+      "title": "Instrução Normativa n.º 04/2021, de 20 de janeiro de 2021 — Ministério Fé e Política durante as eleições gerais",
+      "url": "https://rccbrasil.org.br/institucional/wp-content/uploads/sites/5/2011/11/Instrucao_Normativa_n04_2021-da7.pdf",
+      "publisher": "Conselho Nacional do Movimento Eclesial Renovação Carismática Católica do Brasil (movement source — the movement’s own normative instruction)",
+      "type": "primary"
     },
     {
       "id": "scielo-rcc",
