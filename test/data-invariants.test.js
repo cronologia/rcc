@@ -7,11 +7,15 @@ const fs = require('node:fs');
 const path = require('node:path');
 const {
   renderPage, renderRootStub, renderSitemap, renderRobots,
-  siteBase, localizeData, loadDict, LOCALES, ROUTES,
+  siteBase, localizeData, loadDict, LOCALES, ROUTES, layoutPlacesMap,
 } = require('../build.js');
 
 const ROOT = path.join(__dirname, '..');
 const data = JSON.parse(fs.readFileSync(path.join(ROOT, 'data', 'chronology.json'), 'utf8'));
+// The build passes the vendored gazetteer + basemap into renderPage (placesMap);
+// the drift check must render with the same inputs or it compares apples to oranges.
+const places = JSON.parse(fs.readFileSync(path.join(ROOT, 'data', 'places.json'), 'utf8'));
+const world = JSON.parse(fs.readFileSync(path.join(ROOT, 'src', 'world-land.json'), 'utf8'));
 
 test('every sources[] entry resolves to a reference id or a URL', () => {
   const ids = new Set(data.references.map((r) => r.id));
@@ -55,7 +59,7 @@ function archives() {
 test('every locale renders a full page with the right lang, SEO and disclaimer', () => {
   const base = siteBase(data.meta);
   for (const lang of LOCALES) {
-    const html = renderPage(localizeData(data, loadDict(lang), lang), archives(), { lang, base, route: '' });
+    const html = renderPage(localizeData(data, loadDict(lang), lang), archives(), { lang, base, route: '', places, world });
     assert.match(html, /<!DOCTYPE html>/);
     assert.match(html, /G-R9LV1QZHVE/, `${lang}: Google Analytics tag missing`);
     assert.match(html, new RegExp(`<html lang="${lang}"`), `${lang}: wrong <html lang>`);
@@ -150,8 +154,27 @@ test('committed docs/ is the current render for every locale (no drift)', () => 
   for (const lang of LOCALES) {
     assert.equal(
       fs.readFileSync(path.join(docs, lang, 'index.html'), 'utf8'),
-      renderPage(localizeData(data, loadDict(lang), lang), archives(), { lang, base, route: '' }),
+      renderPage(localizeData(data, loadDict(lang), lang), archives(), { lang, base, route: '', places, world }),
       `docs/${lang}/ out of date — run node build.js`
     );
   }
+});
+
+/* -------------------------------------------------------------------------
+ * Places map: the dataset-specific regression rcc#18 was opened about.
+ * "Topeka / Los Angeles, USA" and "Lucca, Italy / Rome" are each ONE event
+ * in TWO places; a one-pin-per-event map would drop the second and misplace
+ * the origin of the movement. Every compound string must yield every marker.
+ * ---------------------------------------------------------------------- */
+
+test('compound place strings keep every location on the real dataset', () => {
+  const layout = layoutPlacesMap(data.placesMap, data.events, places);
+  assert.ok(layout, 'placesMap is declared, so the map must render');
+  const ids = new Set(layout.pins.map((p) => p.id));
+  for (const id of ['topeka', 'los-angeles', 'lucca', 'rome']) {
+    assert.ok(ids.has(id), `marker "${id}" missing — a compound place string lost a location`);
+  }
+  // The gazetteer covers this dataset today; the validator only WARNS on new
+  // unresolved strings (core#24), and this assertion documents current state.
+  assert.equal(layout.unresolvedEvents, 0, `unresolved: ${layout.unresolvedStrings.join(', ')} — add to core data/places.json and re-run scripts/sync-places.js`);
 });
