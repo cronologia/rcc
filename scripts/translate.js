@@ -55,6 +55,8 @@ const TRANSLATABLE_KEYS = new Set([
   'detail', 'status', 'relation', 'unitNote', 'sourceLabel', 'display', 'unit', 'edgeLabel',
   // Typed-edge legend labels for this site (lineage.edgeLegend) — see build.js.
   'direct', 'indirect',
+  // Lane bases render on the page via renderSwimlanes, so they are prose.
+  'basis', 'intro',
 ]);
 // <<< ADOPT
 
