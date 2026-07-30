@@ -178,3 +178,16 @@ test('compound place strings keep every location on the real dataset', () => {
   // unresolved strings (core#24), and this assertion documents current state.
   assert.equal(layout.unresolvedEvents, 0, `unresolved: ${layout.unresolvedStrings.join(', ')} — add to core data/places.json and re-run scripts/sync-places.js`);
 });
+
+test('the map resolves identically in every locale (place is a translated field)', () => {
+  const en = layoutPlacesMap(data.placesMap, localizeData(data, loadDict('en'), 'en').events, places);
+  for (const lang of LOCALES.filter((l) => l !== 'en')) {
+    const loc = layoutPlacesMap(data.placesMap, localizeData(data, loadDict(lang), lang).events, places);
+    assert.deepEqual(
+      loc.pins.map((p) => p.id).sort(), en.pins.map((p) => p.id).sort(),
+      `${lang}: map lost or gained places against en — the gazetteer is keyed on the canonical English strings`,
+    );
+    assert.equal(loc.mappedEvents, en.mappedEvents, `${lang}: mapped-event count diverges from en`);
+    assert.equal(loc.unresolvedEvents, 0, `${lang}: translated places wrongly reported as missing from the gazetteer`);
+  }
+});
