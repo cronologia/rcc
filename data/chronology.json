@@ -7,6 +7,61 @@
     "siteUrl": "https://cronologia.github.io/rcc/",
     "lastUpdated": "2026-07-25",
     "dataQualityNote": "Work-in-progress dataset compiled from public sources. Movement sources (RCC Brasil, Canção Nova, CHARIS, ICCRS) are labeled as such in the references; membership numbers are the movement's own and are attributed, never asserted; the 1969-vs-1972 Brazil-arrival divergence is recorded, not resolved; sociological characterizations ('pentecostalization', competition with CEBs) are attributed to their authors. Corrections against primary sources are welcome.",
+    "threads": {
+      "note": "These lanes are an editorial reading of this chronology, not a neutral index. They group events by the KIND of act — the movement's origins, acts of the hierarchy, the Brazilian chapter, communities and works, discipline and review, and outside measurement — and deliberately NOT along confessional lines: no lane divides Catholic from Protestant/Pentecostal, because that boundary is contested in the sources and lanes drawn on it would make it look settled. The two pre-1960s events sit in a lane whose own label carries the attribution, because reading them as forerunners is a claim this dataset records rather than adopts. Events belong to several lanes where they belong to several storylines. Each lane states what grounds it; what was considered and left out, and why, is recorded on issue #26.",
+      "lanes": [
+        {
+          "id": "antecedents",
+          "label": "Antecedents (attributed, not adopted)",
+          "basis": "The two events that precede the ~60-year gap in this chronology. Movement accounts read Elena Guerra as a forerunner of the Renewal, and the dataset records the Topeka/Azusa Street revivals as 'context for, not part of' the Catholic movement. This lane holds them so they are visible rather than absent, and its LABEL carries the attribution so the lane cannot be read as the dataset asserting a genealogy. A lane called simply 'precursors' would assert exactly that.",
+          "sources": [
+            "pentecosttoday-guerra-letters",
+            "wikipedia-ccr"
+          ]
+        },
+        {
+          "id": "origins",
+          "label": "Origins of the Renewal",
+          "basis": "The movement's own periodization: it dates itself from the February 1967 Duquesne weekend and celebrated a Golden Jubilee on that basis with Francis in 2017. This lane follows that self-dating — one of the two bases issue #26 asked to be chosen between — and so covers the 1967 foundations and the early theological consolidation, not the hierarchy's later acts, which have their own lane.",
+          "sources": [
+            "vatican-francis-2017"
+          ]
+        },
+        {
+          "id": "hierarchy",
+          "label": "Acts of the hierarchy",
+          "basis": "Acts by which the hierarchy positioned itself toward the movement: papal addresses, dicastery recognitions of statutes and communities, a canonisation, a penalty — and the Brazilian bishops' own Document 53. Deliberately NOT called 'Rome', because the CNBB is an episcopal conference and not the Holy See, and collapsing the two would misdescribe the document that most shaped the movement's standing in Brazil.",
+          "sources": [
+            "vatican-paulvi-1975",
+            "cnbb-doc53"
+          ]
+        },
+        {
+          "id": "brazil",
+          "label": "The Brazilian chapter",
+          "basis": "This repo's declared second subject — its subtitle names 'global origins AND the Brazilian movement'. Stated plainly: this is a CHAPTER lane, not an act-kind lane like the others, so it deliberately cross-cuts them; the alternative was to let the repo's own second subject have no lane at all. It is not a geographic index — the place data and the map serve that."
+        },
+        {
+          "id": "communities",
+          "label": "Communities and works",
+          "basis": "Foundations and institutional works — the covenant communities and their federation, the Brazilian communities, and the media works that grew out of them. Grouped as foundations, without ranking them or implying that the international and Brazilian bodies stand in a parent-child relation the sources do not assert."
+        },
+        {
+          "id": "discipline",
+          "label": "Discipline and review",
+          "basis": "Episcopal review of a community and a canonical penalty against a prelate associated with the movement. Kept as its own lane on issue #26's reasoning: folding these into 'communities and works' would soften them, and having no lane for them would hide them. Small by design — two events."
+        },
+        {
+          "id": "measurement",
+          "label": "Measurement and analysis",
+          "basis": "Attributed observations ABOUT the movement rather than acts OF it: survey instruments and social-scientific analysis, plus the movement's own self-reported participant figure. The lane keeps the two vocabularies adjacent but distinct, exactly as the numbers chart does — a self-report and a population share are not the same measurement and the dataset never merges them.",
+          "sources": [
+            "pew-2006",
+            "pew-2014"
+          ]
+        }
+      ]
+    },
     "vizChips": [
       {
         "href": "#places-map",
@@ -91,6 +146,9 @@
       "sources": [
         "wikipedia-guerra",
         "pentecosttoday-guerra-letters"
+      ],
+      "threads": [
+        "antecedents"
       ]
     },
     {
@@ -102,6 +160,9 @@
       "text": "The Topeka outpouring (1901) and the Azusa Street revival (1906) launch modern Pentecostalism — context for, not part of, the Catholic movement.",
       "sources": [
         "wikipedia-ccr"
+      ],
+      "threads": [
+        "antecedents"
       ]
     },
     {
@@ -114,6 +175,9 @@
       "sources": [
         "wikipedia-duquesne",
         "duquesne-libguide"
+      ],
+      "threads": [
+        "origins"
       ]
     },
     {
@@ -126,6 +190,9 @@
       "sources": [
         "brill-notredame",
         "swc-origins"
+      ],
+      "threads": [
+        "origins"
       ]
     },
     {
@@ -137,6 +204,10 @@
       "text": "Ralph Martin, Stephen Clark, Jim Cavnar and Gerry Rauch found the Word of God — matrix of the 'covenant communities'.",
       "sources": [
         "wikipedia-wordofgod"
+      ],
+      "threads": [
+        "origins",
+        "communities"
       ]
     },
     {
@@ -151,6 +222,9 @@
         "rcccampinas-historia",
         "prandi-sopro",
         "souza-2008-midia"
+      ],
+      "threads": [
+        "brazil"
       ]
     },
     {
@@ -162,6 +236,9 @@
       "text": "Rahm publishes 'Sereis Batizados no Espírito', presenting 'Catholic Pentecostalism'; Fr. Eduardo Dougherty SJ, ordained 1971, returns to Brazil and spreads retreats and prayer groups across the country (movement's account).",
       "sources": [
         "rccbrasil-historia"
+      ],
+      "threads": [
+        "brazil"
       ]
     },
     {
@@ -174,6 +251,9 @@
       "sources": [
         "rccbrasil-historia",
         "cnlb-rcc"
+      ],
+      "threads": [
+        "brazil"
       ]
     },
     {
@@ -186,6 +266,9 @@
       "sources": [
         "charis-malines",
         "pentecosttoday-malines"
+      ],
+      "threads": [
+        "origins"
       ]
     },
     {
@@ -198,6 +281,9 @@
       "sources": [
         "vatican-paulvi-1975",
         "ct-1975"
+      ],
+      "threads": [
+        "hierarchy"
       ]
     },
     {
@@ -210,6 +296,10 @@
       "sources": [
         "vaticannews-abib",
         "cancaonova-nota"
+      ],
+      "threads": [
+        "brazil",
+        "communities"
       ]
     },
     {
@@ -224,6 +314,11 @@
         "portalasj",
         "vatican-cantalamessa-bio",
         "charis-speakers"
+      ],
+      "threads": [
+        "brazil",
+        "communities",
+        "hierarchy"
       ]
     },
     {
@@ -235,6 +330,9 @@
       "text": "The pope addresses the fourth international leaders' conference of the Renewal — the first of his repeated receptions.",
       "sources": [
         "vatican-jp2-1981"
+      ],
+      "threads": [
+        "hierarchy"
       ]
     },
     {
@@ -247,6 +345,10 @@
       "sources": [
         "wikipedia-shalom",
         "laityfamilylife-shalom"
+      ],
+      "threads": [
+        "brazil",
+        "communities"
       ]
     },
     {
@@ -261,6 +363,9 @@
         "wikipedia-wordofgod",
         "ct-1991-communities",
         "ncr-1997-communities"
+      ],
+      "threads": [
+        "communities"
       ]
     },
     {
@@ -274,6 +379,10 @@
         "wikipedia-seculo21",
         "wikicn-obrademaria",
         "correio-obrademaria"
+      ],
+      "threads": [
+        "brazil",
+        "communities"
       ]
     },
     {
@@ -286,6 +395,9 @@
       "sources": [
         "iccrs-about",
         "laici-iccrs"
+      ],
+      "threads": [
+        "hierarchy"
       ]
     },
     {
@@ -300,6 +412,10 @@
         "veritatis-doc53",
         "taubate-doc53",
         "doc53-pdf"
+      ],
+      "threads": [
+        "hierarchy",
+        "brazil"
       ]
     },
     {
@@ -311,6 +427,10 @@
       "text": "RCC Brasil itself estimated ~3.8 million participants in 1994 — a self-reported figure, attributed to the movement.",
       "sources": [
         "rccbrasil-historia"
+      ],
+      "threads": [
+        "brazil",
+        "measurement"
       ]
     },
     {
@@ -322,6 +442,11 @@
       "text": "The Mother of God Community (Gaithersburg, Maryland; traced to a 1966 prayer awakening among laywomen at Our Lady of Mercy, Potomac) is reviewed at the instruction of Cardinal James A. Hickey, Archbishop of Washington, who in 1994 ordered both a self-assessment and an outside assessment. Per the encyclopedia record the external reviewer, Sr. Elizabeth McDonough, reported that members and former members described overreaching control by community leaders, including arranged marriages and scrutiny of members' finances. On 23 September 1995 Hickey addressed the community, calling it 'a gift from the Lord' while stating that lay people within it 'had too much personal authority over other people's lives', asking for leadership changes and for personal information on members to be destroyed. These are the archdiocese's and the reviewer's findings as reported, attributed — not this site's characterization. A wave-10 mining report gave the address as 25 September and named a 'Baltimore' bishop 'Nathan Hickey'; the source consulted here gives 23 September, Washington, and James A. Hickey.",
       "sources": [
         "wikipedia-motherofgod"
+      ],
+      "threads": [
+        "discipline",
+        "communities",
+        "hierarchy"
       ]
     },
     {
@@ -333,6 +458,9 @@
       "text": "'Músicas para Louvar ao Senhor', recorded at Masses of the young priest Marcelo Rossi and released by PolyGram, sells over 3.3 million copies — the best-selling album in Brazilian phonographic history — inaugurating the era of stadium Masses and charismatic mass media.",
       "sources": [
         "wikipedia-rossi-album"
+      ],
+      "threads": [
+        "brazil"
       ]
     },
     {
@@ -344,6 +472,10 @@
       "text": "Emmanuel Milingo, Archbishop of Lusaka from 1969 to 1983 and internationally known for a healing and exorcism ministry, was transferred to Rome in 1983 — per the encyclopedia record over what were described as inappropriate use of his office of exorcism and a role in causing divisions. He married Maria Sung in 2001 in a ceremony presided over by Sun Myung Moon of the Unification Church, drawing a public canonical admonition from Cardinal Joseph Ratzinger in July 2001. On 24 September 2006 he consecrated four married men as bishops without papal mandate; the Holy See Press Office announced the resulting latae sententiae excommunication on 26 September 2006, and he was dismissed from the clerical state on 17 December 2009. Recorded because his charismatic healing ministry made him a widely cited figure in and around the Renewal; the canonical judgments are the Holy See's, reported as such.",
       "sources": [
         "wikipedia-milingo"
+      ],
+      "threads": [
+        "discipline",
+        "hierarchy"
       ]
     },
     {
@@ -356,6 +488,10 @@
       "sources": [
         "pew-2006",
         "pew-2007"
+      ],
+      "threads": [
+        "measurement",
+        "brazil"
       ]
     },
     {
@@ -367,6 +503,11 @@
       "text": "The Pontifical Council for the Laity recognizes Canção Nova as an international private association of the faithful (decree ad experimentum; definitive recognition later — the dates are distinct).",
       "sources": [
         "cancaonova-reconhecimento"
+      ],
+      "threads": [
+        "hierarchy",
+        "brazil",
+        "communities"
       ]
     },
     {
@@ -379,6 +520,11 @@
       "sources": [
         "wikipedia-shalom",
         "laityfamilylife-shalom"
+      ],
+      "threads": [
+        "hierarchy",
+        "brazil",
+        "communities"
       ]
     },
     {
@@ -392,6 +538,10 @@
         "redalyc-rccpr",
         "rever-pucsp",
         "rccbrasil-eleicoes"
+      ],
+      "threads": [
+        "measurement",
+        "brazil"
       ]
     },
     {
@@ -403,6 +553,9 @@
       "text": "Pew Research Center publishes 'Religion in Latin America' (fieldwork October 2013 – February 2014), reporting that a median of 40% of Catholics across Latin America describe themselves as 'charismatic'. Reported exposure to charismatic practice at Mass varies sharply: majorities in the Dominican Republic (77%), Honduras (61%) and Paraguay (60%) said they had witnessed such practices, while majorities in Uruguay (63%), Argentina (61%) and Puerto Rico (60%) said they never occur in their services. The 'charismatic' label is the survey's and is self-reported; these are a survey's figures, not the movement's, and are not comparable with movement membership counts. A wave-10 mining report attributed to this study a 58% figure for Brazil and about 20% for Argentina; neither was confirmed on the report page fetched for this entry, so neither is recorded.",
       "sources": [
         "pew-2014"
+      ],
+      "threads": [
+        "measurement"
       ]
     },
     {
@@ -415,6 +568,10 @@
       "sources": [
         "vatican-francis-2017",
         "salastampa-2017"
+      ],
+      "threads": [
+        "hierarchy",
+        "origins"
       ]
     },
     {
@@ -428,6 +585,9 @@
         "vaticannews-charis",
         "laityfamilylife-charis",
         "vatican-francis-2019"
+      ],
+      "threads": [
+        "hierarchy"
       ]
     },
     {
@@ -439,6 +599,10 @@
       "text": "Canção Nova's founder dies at 85.",
       "sources": [
         "vaticannews-abib"
+      ],
+      "threads": [
+        "brazil",
+        "communities"
       ]
     },
     {
@@ -451,6 +615,9 @@
       "sources": [
         "rccbrasil-rahm",
         "cancaonova-rahm"
+      ],
+      "threads": [
+        "brazil"
       ]
     },
     {
@@ -462,6 +629,10 @@
       "text": "Elena Guerra, beatified on 26 April 1959 by John XXIII, is canonised by Francis on 20 October 2024. Movement accounts read the canonisation as recognition of a forerunner of the Renewal; the canonisation is a documented act, the lineage reading is the movement's.",
       "sources": [
         "wikipedia-guerra"
+      ],
+      "threads": [
+        "hierarchy",
+        "antecedents"
       ]
     },
     {
@@ -474,6 +645,9 @@
       "sources": [
         "vatican-leo-2026",
         "vaticannews-leo-2026"
+      ],
+      "threads": [
+        "hierarchy"
       ]
     }
   ],

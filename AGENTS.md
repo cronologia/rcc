@@ -21,7 +21,11 @@ adopted.
 ```
 data/chronology.json      SOURCE OF TRUTH — facts, events, figures, organizations,
                           disambiguation, branchTimeline, lineage, numbersChart,
-                          chronologySpine, placesMap, references (hand-edited)
+                          chronologySpine, placesMap, references (hand-edited),
+                          meta.threads + events[].threads — the lane taxonomy decided in #26.
+                          An EDITORIAL READING, not a neutral index: read meta.threads.note
+                          and each lane's basis before tagging a new event. No lane divides
+                          Catholic from Protestant/Pentecostal — that boundary is contested.
 data/places.json          VENDORED, PINNED copy of the cronologia/core gazetteer
                           (written by scripts/sync-places.js; never hand-edited) —
                           coordinates for the placesMap renderer
