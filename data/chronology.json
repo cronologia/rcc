@@ -9,6 +9,10 @@
     "dataQualityNote": "Work-in-progress dataset compiled from public sources. Movement sources (RCC Brasil, Canção Nova, CHARIS, ICCRS) are labeled as such in the references; membership numbers are the movement's own and are attributed, never asserted; the 1969-vs-1972 Brazil-arrival divergence is recorded, not resolved; sociological characterizations ('pentecostalization', competition with CEBs) are attributed to their authors. Corrections against primary sources are welcome.",
     "vizChips": [
       {
+        "href": "#places-map",
+        "label": "🗺️ Map"
+      },
+      {
         "href": "#branch-timeline",
         "label": "🌱 Diffusion"
       },
@@ -932,6 +936,7 @@
     ]
   },
   "chronologySpine": {},
+  "placesMap": {},
   "references": [
     {
       "id": "wikipedia-ccr",
