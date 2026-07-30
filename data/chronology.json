@@ -45,11 +45,12 @@
     },
     {
       "label": "Arrival in Brazil",
-      "value": "1969 per the movement's own account (Fr. Haroldo Rahm's prayer courses in Campinas), with national diffusion from 1972 via Fr. Eduardo Dougherty — an academic source (Prandi) writes 'mid-1970s'; the divergence is recorded.",
+      "value": "1969 per the movement's own account (Fr. Haroldo Rahm's prayer courses in Campinas), with national diffusion from 1972 via Fr. Eduardo Dougherty — an academic source (Prandi) writes 'mid-1970s', while another (Souza 2008, citing Prandi and Carranza) writes 'between 1969 and 1970'; the divergence is recorded.",
       "verified": false,
       "sources": [
         "rccbrasil-historia",
-        "prandi-sopro"
+        "prandi-sopro",
+        "souza-2008-midia"
       ]
     },
     {
@@ -144,11 +145,12 @@
       "dateVerified": false,
       "place": "Campinas, Brazil",
       "title": "Arrival in Brazil (movement's account)",
-      "text": "US Jesuit Fr. Haroldo Rahm begins 'Prayer Courses and Studies on the Holy Spirit' in Campinas in the second half of 1969 — RCC Brasil cites a 15–17 August 1969 experience with about 60 young people — and Brazil's first prayer group is born. The academic literature (Prandi) dates the movement's Brazilian take-off to the mid-1970s; both datings are recorded.",
+      "text": "US Jesuit Fr. Haroldo Rahm begins 'Prayer Courses and Studies on the Holy Spirit' in Campinas in the second half of 1969 — RCC Brasil cites a 15–17 August 1969 experience with about 60 young people — and Brazil's first prayer group is born. The academic literature diverges: Prandi dates the movement's Brazilian take-off to the mid-1970s, while Souza (2008), citing Prandi (1997) and Carranza (2000), writes that the RCC 'arrived in Brazil between 1969 and 1970' with Rahm and Dougherty at Campinas; all datings are recorded.",
       "sources": [
         "rccbrasil-historia",
         "rcccampinas-historia",
-        "prandi-sopro"
+        "prandi-sopro",
+        "souza-2008-midia"
       ]
     },
     {
@@ -168,9 +170,10 @@
       "dateVerified": false,
       "place": "Campinas, Brazil",
       "title": "First National Congress of the RCC",
-      "text": "About 50 leaders meet, organized by Dougherty, Rahm and Sr. Juliette Schuckenbrock; a second congress follows in Belo Horizonte in 1974 (movement's account).",
+      "text": "About 50 leaders meet, organized by Dougherty, Rahm and Sr. Juliette Schuckenbrock; a second congress follows in Belo Horizonte in 1974 (movement's account). The CNLB's affiliate profile likewise places the first congress in mid-1973 in Campinas and the second in January 1974.",
       "sources": [
-        "rccbrasil-historia"
+        "rccbrasil-historia",
+        "cnlb-rcc"
       ]
     },
     {
@@ -1378,6 +1381,13 @@
       "url": "https://en.wikipedia.org/wiki/Michael_Scanlan_(priest)",
       "publisher": "Wikipedia (EN)",
       "type": "encyclopedia"
+    },
+    {
+      "id": "souza-2008-midia",
+      "title": "André Ricardo de Souza — As Investidas Católicas na Mídia (REVER, set. 2008, pp. 27–45)",
+      "url": "https://www.pucsp.br/rever/rv3_2008/t_souza.pdf",
+      "publisher": "REVER — Revista de Estudos da Religião, PUC-SP (peer-reviewed academic journal)",
+      "type": "academic"
     }
   ]
 }
