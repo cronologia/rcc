@@ -125,6 +125,29 @@ Consequences for searching:
   ICCRO 1978 → Rome 1981 sequence. Searching `ICCRO 1980` will find you a claim
   the repo has already rejected.
 
+### The BRAZILIAN national body has also been called different things
+
+Directly relevant to the open item on `rcc#1` (the National Council's formal
+constitution date). Searching only `Conselho Nacional` will miss the earlier
+record, because that is not what the primary sources of the period call it:
+
+| Source | Date | What it calls the national body |
+|---|---|---|
+| CNBB **Doc. 53**, art. 21 (read in full this session) | 1994 | **`Coordenação Nacional da RCC`** |
+| CNBB Doc. 53, *Apresentação* | 1994 | **`Comissão Nacional da RCC`** |
+| The movement's own normative instructions | 2019–2021 | `Conselho Nacional do Movimento Eclesial Renovação Carismática Católica do Brasil` |
+
+So in 1994 the CNBB addressed a *Coordenação*/*Comissão*; the *Conselho
+Nacional* form (and the long formal name) belongs to the later period. Search
+all three when hunting for the constitution date, and note that Doc. 53 art. 21
+provides for a **bishop designated by the CNBB as Spiritual Assistant** to that
+body — a formulation worth searching in diocesan and CNBB material.
+
+Also useful: the movement's normative acts are numbered **`Instrução
+Normativa`** (e.g. `IN 03/2019`, `IN 04/2021`), issued by *Assembleia Geral
+Extraordinária* — a document class that is not indexed as "estatuto" and will
+not surface on searches for one.
+
 ### Naming variants across languages — and which source family uses which
 
 - **The movement itself.** English `Catholic Charismatic Renewal` (13 hits in
