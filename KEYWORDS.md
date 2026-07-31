@@ -157,10 +157,16 @@ not surface on searches for one.
   different surnames — Brazilian naming routinely drops a middle surname — but
   **nothing here asserts that**, and it must be verified before the two are
   merged. Search both, and search `Reis 2010` for the memoir.
-- **`Reis 2010` is an unworked lead**, and probably the best one left for the
-  National Council's constitution date (`rcc#1`): a published account by a
-  *founding member and former president* of the RCC in Brazil is exactly where
-  an organisational founding date would appear. Not yet located in full.
+- **`Reis 2010` — a lead, but a thin one.** The full citation is **REIS,
+  Reinaldo. (2010), "A Renovação Carismática Católica no Brasil". *Revista
+  Brasil Cristão*, maio: 29** — a **single magazine page**, not a memoir or a
+  monograph (a companion piece, "Os Papas e a Renovação Carismática", runs
+  pp. 29–30 of the same issue). An earlier note here called it the best
+  remaining lead for the National Council's constitution date; that
+  overstated it. One page in a Christian magazine is unlikely to carry a
+  founding date, and *Revista Brasil Cristão* is not indexed in the usual
+  academic databases. Worth reading if a copy surfaces — but the CNBB
+  documentation archive and Prandi/Carranza in print remain the better bets.
 
 ### Naming variants across languages — and which source family uses which
 
