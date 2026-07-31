@@ -148,6 +148,20 @@ Normativa`** (e.g. `IN 03/2019`, `IN 04/2021`), issued by *Assembleia Geral
 Extraordinária* — a document class that is not indexed as "estatuto" and will
 not surface on searches for one.
 
+### Two person-name traps in the presidents list
+
+- **`Reinaldo Reis` vs `Reinaldo Beserra`.** Oro & Alves (Religião e Sociedade
+  33(1), 2013) cite **"Reinaldo Reis, membro fundador da RCC no Brasil,
+  ex-presidente da RCC no Brasil" (Reis 2010:29)**. This repo's presidents list
+  has **Reinaldo Beserra (2000–2004)**. These *may* be the same person under
+  different surnames — Brazilian naming routinely drops a middle surname — but
+  **nothing here asserts that**, and it must be verified before the two are
+  merged. Search both, and search `Reis 2010` for the memoir.
+- **`Reis 2010` is an unworked lead**, and probably the best one left for the
+  National Council's constitution date (`rcc#1`): a published account by a
+  *founding member and former president* of the RCC in Brazil is exactly where
+  an organisational founding date would appear. Not yet located in full.
+
 ### Naming variants across languages — and which source family uses which
 
 - **The movement itself.** English `Catholic Charismatic Renewal` (13 hits in
