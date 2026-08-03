@@ -1,6 +1,6 @@
 {
   "generatedBy": "scripts/archive-refs.js",
-  "updatedAt": "2026-07-30",
+  "updatedAt": "2026-08-03",
   "snapshots": {
     "http://wiki.cancaonova.com/index.php/Comunidade_Obra_de_Maria": {
       "refId": "wikicn-obrademaria",
@@ -151,6 +151,12 @@
       "archiveUrl": "https://web.archive.org/web/20250327172648/https://natcath.org/NCR_Online/archives2/1997b/041897/041897c.htm",
       "timestamp": "20250327172648",
       "checkedAt": "2026-07-24"
+    },
+    "https://noticias.cancaonova.com/brasil/morre-padre-haroldo-rahm/": {
+      "refId": "cancaonova-rahm",
+      "archiveUrl": "https://web.archive.org/web/20260803100410/https://noticias.cancaonova.com/brasil/morre-padre-haroldo-rahm/",
+      "timestamp": "20260803100410",
+      "checkedAt": "2026-08-03"
     },
     "https://portalasj.com.br/quem-somos/": {
       "refId": "portalasj",
