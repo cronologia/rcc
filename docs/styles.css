@@ -107,6 +107,7 @@ ol.references li:target { background: var(--accent-soft); border-radius: 4px; pa
 
 /* References */
 ol.references { padding-left: 1.25rem; }
+.ref-note { display: block; margin-top: .2rem; font-size: .84rem; opacity: .82; font-style: italic; }
 ol.references li { margin-bottom: .6rem; }
 ol.references a { color: var(--accent); text-decoration: none; font-weight: 600; }
 ol.references a:hover { text-decoration: underline; }

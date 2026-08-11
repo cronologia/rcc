@@ -1141,14 +1141,14 @@
       "id": "brill-notredame",
       "title": "Notre Dame and the beginnings of the Charismatic Renewal (Transatlantic Charismatic Renewal, Brill)",
       "url": "https://brill.com/display/book/9789004461680/BP000008.xml",
-      "publisher": "Brill (academic)",
+      "publisher": "Brill",
       "type": "academic"
     },
     {
       "id": "swc-origins",
       "title": "Origins of the Catholic Charismatic Renewal in the United States",
       "url": "https://www.euppublishing.com/doi/10.3366/swc.2019.0267",
-      "publisher": "Studies in World Christianity (academic)",
+      "publisher": "Studies in World Christianity",
       "type": "academic"
     },
     {
@@ -1162,43 +1162,47 @@
       "id": "rccbrasil-historia",
       "title": "RCC Brasil — Nossa História",
       "url": "https://rccbrasil.org.br/nossa-historia/",
-      "publisher": "RCC Brasil (movement source)",
-      "type": "movement"
+      "publisher": "RCC Brasil",
+      "publisherNote": "movement source",
+      "type": "official"
     },
     {
       "id": "rcccampinas-historia",
       "title": "RCC Campinas — Nossa História",
       "url": "https://rcccampinas.org.br/nossahistoria",
-      "publisher": "RCC Campinas (movement source)",
-      "type": "movement"
+      "publisher": "RCC Campinas",
+      "publisherNote": "movement source",
+      "type": "official"
     },
     {
       "id": "prandi-sopro",
       "title": "Reginaldo Prandi — Um Sopro do Espírito (USP, 1998)",
       "url": "https://reginaldoprandi.fflch.usp.br/livro-sopro",
-      "publisher": "USP (academic)",
+      "publisher": "USP",
       "type": "academic"
     },
     {
       "id": "charis-malines",
       "title": "The Malines Documents and Cardinal Suenens",
       "url": "https://www.charis.international/en/the-malines-documents-and-cardinal-suenens/",
-      "publisher": "CHARIS (movement source)",
-      "type": "movement"
+      "publisher": "CHARIS",
+      "publisherNote": "movement source",
+      "type": "official"
     },
     {
       "id": "pentecosttoday-malines",
       "title": "The Malines Documents",
       "url": "https://www.pentecosttodayusa.org/malines-documents/",
-      "publisher": "Pentecost Today USA (movement source)",
-      "type": "movement"
+      "publisher": "Pentecost Today USA",
+      "publisherNote": "movement source",
+      "type": "official"
     },
     {
       "id": "vatican-paulvi-1975",
       "title": "Paul VI — Discours aux participants au IIIe Congrès international du renouveau charismatique catholique (19 May 1975, French original — the authoritative text; /it and /en pages are stubs)",
       "url": "https://www.vatican.va/content/paul-vi/fr/speeches/1975/documents/hf_p-vi_spe_19750519_rinnovamento-carismatico.html",
       "publisher": "Holy See (vatican.va)",
-      "type": "primary"
+      "type": "official"
     },
     {
       "id": "ct-1975",
@@ -1212,21 +1216,22 @@
       "title": "John Paul II — Address to the 4th international leaders' conference (7 May 1981)",
       "url": "https://www.vatican.va/content/john-paul-ii/en/speeches/1981/may/documents/hf_jp-ii_spe_19810507_rinnovamento-carismatico.html",
       "publisher": "Holy See (vatican.va)",
-      "type": "primary"
+      "type": "official"
     },
     {
       "id": "vaticannews-abib",
       "title": "Death of Msgr. Jonas Abib, founder of Canção Nova (December 2022)",
       "url": "https://www.vaticannews.va/pt/igreja/news/2022-12/faleceu-anos-monsenhor-jonas-abib-fundador-cancao-nova.html",
       "publisher": "Vatican News",
-      "type": "official-site"
+      "type": "news"
     },
     {
       "id": "cancaonova-nota",
       "title": "Canção Nova — nota de falecimento de Monsenhor Jonas Abib",
       "url": "https://assessoria.cancaonova.com/notas/comunidade-cancao-nova-comunica-o-falecimento-de-monsenhor-jonas-abib-2/",
-      "publisher": "Canção Nova (movement source)",
-      "type": "movement"
+      "publisher": "Canção Nova",
+      "publisherNote": "movement source",
+      "type": "official"
     },
     {
       "id": "wikipedia-dougherty",
@@ -1239,15 +1244,17 @@
       "id": "portalasj",
       "title": "Associação do Senhor Jesus — Quem somos",
       "url": "https://portalasj.com.br/quem-somos/",
-      "publisher": "ASJ (movement source)",
-      "type": "movement"
+      "publisher": "ASJ",
+      "publisherNote": "movement source",
+      "type": "official"
     },
     {
       "id": "charis-speakers",
       "title": "CHARIS Formation — speakers (Cantalamessa, Moran, Scafuro biographies)",
       "url": "https://formation.charis.international/pages/speakers",
-      "publisher": "CHARIS (movement source)",
-      "type": "movement"
+      "publisher": "CHARIS",
+      "publisherNote": "movement source",
+      "type": "official"
     },
     {
       "id": "wikipedia-shalom",
@@ -1261,7 +1268,7 @@
       "title": "Shalom Catholic Community — Dicastery for Laity, Family and Life directory",
       "url": "https://www.laityfamilylife.va/content/laityfamilylife/en/associazioni-e-movimenti/repertorio/comunita-cattolica-shalom-.html",
       "publisher": "Holy See (Dicastery for Laity)",
-      "type": "primary"
+      "type": "official"
     },
     {
       "id": "wikipedia-sots",
@@ -1281,8 +1288,9 @@
       "id": "wikicn-obrademaria",
       "title": "Comunidade Obra de Maria",
       "url": "http://wiki.cancaonova.com/index.php/Comunidade_Obra_de_Maria",
-      "publisher": "Wiki Canção Nova (movement source)",
-      "type": "movement"
+      "publisher": "Wiki Canção Nova",
+      "publisherNote": "movement source",
+      "type": "encyclopedia"
     },
     {
       "id": "correio-obrademaria",
@@ -1295,36 +1303,39 @@
       "id": "iccrs-about",
       "title": "ICCRS — About",
       "url": "http://www.iccrs.org/en/about-iccrs/",
-      "publisher": "ICCRS (movement source)",
-      "type": "movement"
+      "publisher": "ICCRS",
+      "publisherNote": "movement source",
+      "type": "official"
     },
     {
       "id": "laici-iccrs",
       "title": "International Catholic Charismatic Renewal Services — Pontifical Council for the Laity directory",
       "url": "https://www.laici.va/content/laici/en/sezioni/associazioni/repertorio/serv-rinnovamentocarismatico.html",
       "publisher": "Holy See (laici.va)",
-      "type": "primary"
+      "type": "official"
     },
     {
       "id": "cnbb-doc53",
       "title": "CNBB Documento 53 — Orientações Pastorais sobre a Renovação Carismática Católica (1994): official publisher, Edições CNBB (Documentos da CNBB catalog; the earlier direct product URL now redirects here after a site migration)",
       "url": "https://www.edicoescnbb.com.br/cnbb-e-pastoral/documentos-da-cnbb",
-      "publisher": "Edições CNBB (official CNBB publisher)",
-      "type": "primary"
+      "publisher": "Edições CNBB",
+      "publisherNote": "official CNBB publisher",
+      "type": "official"
     },
     {
       "id": "taubate-doc53",
       "title": "Documento 53 — Orientações Pastorais sobre a RCC (diocesan summary)",
       "url": "https://diocesedetaubate.org.br/documento-53-orientacoes-pastorais-sobre-a-renovacao-carismatica-catolica/",
       "publisher": "Diocese de Taubaté",
-      "type": "official-site"
+      "type": "official"
     },
     {
       "id": "doc53-pdf",
       "title": "CNBB Doc. 53 — full text (PDF mirror)",
       "url": "https://efosm.wordpress.com/wp-content/uploads/2013/02/cnbb-doc-53-e28093-orientac3a7c3b5es-pastorais-sobre-a-renovac3a7c3a3o-carismc3a1tica-catc3b3lica.pdf",
-      "publisher": "Mirror (verify against CNBB original)",
-      "type": "primary"
+      "publisher": "Mirror",
+      "publisherNote": "verify against CNBB original",
+      "type": "archive"
     },
     {
       "id": "wikipedia-rossi-album",
@@ -1351,28 +1362,29 @@
       "id": "redalyc-rccpr",
       "title": "The RCC of Paraná in elections (case study)",
       "url": "https://www.redalyc.org/journal/5882/588268202009/movil/",
-      "publisher": "Redalyc (academic)",
+      "publisher": "Redalyc",
       "type": "academic"
     },
     {
       "id": "rever-pucsp",
       "title": "REVER — study on the RCC (PUC-SP)",
       "url": "https://www.pucsp.br/rever/rv1_2008/t_silveira.htm",
-      "publisher": "REVER/PUC-SP (academic)",
+      "publisher": "REVER/PUC-SP",
       "type": "academic"
     },
     {
       "id": "rccbrasil-in04-2021",
       "title": "Instrução Normativa n.º 04/2021, de 20 de janeiro de 2021 — Ministério Fé e Política durante as eleições gerais",
       "url": "https://rccbrasil.org.br/institucional/wp-content/uploads/sites/5/2011/11/Instrucao_Normativa_n04_2021-da7.pdf",
-      "publisher": "Conselho Nacional do Movimento Eclesial Renovação Carismática Católica do Brasil (movement source — the movement’s own normative instruction)",
-      "type": "primary"
+      "publisher": "Conselho Nacional do Movimento Eclesial Renovação Carismática Católica do Brasil",
+      "publisherNote": "movement source — the movement’s own normative instruction",
+      "type": "official"
     },
     {
       "id": "scielo-rcc",
       "title": "Academic study on the RCC and Brazilian Catholicism (SciELO)",
       "url": "https://www.scielo.br/j/rs/a/ydp8rBvBTZv5YSmTCS9KNGx/?format=pdf&lang=pt",
-      "publisher": "SciELO (academic)",
+      "publisher": "SciELO",
       "type": "academic"
     },
     {
@@ -1380,105 +1392,111 @@
       "title": "Francis — Pentecost vigil at the Circus Maximus (3 June 2017)",
       "url": "https://www.vatican.va/content/francesco/en/speeches/2017/june/documents/papa-francesco_20170603_veglia-pentecoste.html",
       "publisher": "Holy See (vatican.va)",
-      "type": "primary"
+      "type": "official"
     },
     {
       "id": "salastampa-2017",
       "title": "Holy See Press Office bulletin — Golden Jubilee vigil (3 June 2017)",
       "url": "https://press.vatican.va/content/salastampa/en/bollettino/pubblico/2017/06/03/170603g.html",
       "publisher": "Holy See Press Office",
-      "type": "primary"
+      "type": "official"
     },
     {
       "id": "vaticannews-charis",
       "title": "CHARIS: a new service for the Catholic Charismatic Renewal (June 2019)",
       "url": "https://www.vaticannews.va/en/vatican-city/news/2019-06/charis-a-new-service-for-the-catholic-charismatic-renewal.html",
       "publisher": "Vatican News",
-      "type": "official-site"
+      "type": "news"
     },
     {
       "id": "laityfamilylife-charis",
       "title": "CHARIS enters into action (Dicastery for Laity, Family and Life, 2019)",
       "url": "https://www.laityfamilylife.va/content/laityfamilylife/en/news/2019/entra-in-azione-charis--il-servizio-unico-internazionale-al-rinn.html",
       "publisher": "Holy See (Dicastery for Laity)",
-      "type": "primary"
+      "type": "official"
     },
     {
       "id": "vatican-francis-2019",
       "title": "Francis — Address to CHARIS (8 June 2019)",
       "url": "https://www.vatican.va/content/francesco/en/speeches/2019/june/documents/papa-francesco_20190608_charis.html",
       "publisher": "Holy See (vatican.va)",
-      "type": "primary"
+      "type": "official"
     },
     {
       "id": "pentecosttoday-charis",
       "title": "CHARIS moderator and international service of communion announced (2018)",
       "url": "https://www.pentecosttodayusa.org/2018/charis-moderator-and-members-of-the-international-service-of-communion-are-announced/",
-      "publisher": "Pentecost Today USA (movement source)",
-      "type": "movement"
+      "publisher": "Pentecost Today USA",
+      "publisherNote": "movement source",
+      "type": "official"
     },
     {
       "id": "cnlb-rcc",
       "title": "Conselho Nacional do Laicato — a RCC como organização filiada",
       "url": "https://cnlb.org.br/conhecendo-as-organizacoes-filiadas-rcc/",
       "publisher": "CNLB",
-      "type": "official-site"
+      "type": "official"
     },
     {
       "id": "cancaonova-quemsomos",
       "title": "Canção Nova — Quem somos",
       "url": "https://comunidadecancaonova.com/cancao-nova-quem-somos/",
-      "publisher": "Canção Nova (movement source)",
-      "type": "movement"
+      "publisher": "Canção Nova",
+      "publisherNote": "movement source",
+      "type": "official"
     },
     {
       "id": "cancaonova-reconhecimento",
       "title": "Canção Nova — Reconhecimento Pontifício",
       "url": "https://comunidadecancaonova.com/reconhecimento-pontificio/",
-      "publisher": "Canção Nova (movement source)",
-      "type": "movement"
+      "publisher": "Canção Nova",
+      "publisherNote": "movement source",
+      "type": "official"
     },
     {
       "id": "rccbrasil-rahm",
       "title": "Nota de falecimento — Padre Haroldo Rahm (RCC Brasil, 2024)",
       "url": "https://rccbrasil.org.br/institucional/index.php/artigos/1378-nota-de-falecimento-padre-haroldo-rahm",
-      "publisher": "RCC Brasil (movement source)",
-      "type": "movement"
+      "publisher": "RCC Brasil",
+      "publisherNote": "movement source",
+      "type": "official"
     },
     {
       "id": "cancaonova-rahm",
       "title": "Morre Padre Haroldo Rahm (Canção Nova Notícias, 2024)",
       "url": "https://noticias.cancaonova.com/brasil/morre-padre-haroldo-rahm/",
-      "publisher": "Canção Nova Notícias (movement source)",
-      "type": "movement"
+      "publisher": "Canção Nova Notícias",
+      "publisherNote": "movement source",
+      "type": "news"
     },
     {
       "id": "vatican-leo-2026",
       "title": "Leo XIV — Address to the Charismatic Renewal (30 May 2026)",
       "url": "https://www.vatican.va/content/leo-xiv/en/speeches/2026/may/documents/20260530-carismatici.html",
       "publisher": "Holy See (vatican.va)",
-      "type": "primary"
+      "type": "official"
     },
     {
       "id": "vaticannews-leo-2026",
       "title": "Pope Leo to the Charismatic Renewal: the Spirit leads to communion (May 2026)",
       "url": "https://www.vaticannews.va/en/pope/news/2026-05/pope-leo-charismatic-renewal-address-spirit-lead-to-communion.html",
       "publisher": "Vatican News",
-      "type": "official-site"
+      "type": "news"
     },
     {
       "id": "vatican-cantalamessa-bio",
       "title": "CANTALAMESSA Card. Raniero, O.F.M. Cap. — biographical note ('nominato da Giovanni Paolo II Predicatore della Casa Pontificia nel 1980')",
       "url": "https://press.vatican.va/content/salastampa/it/documentation/cardinali_biografie/cardinali_bio_cantalamessa_r.html",
       "publisher": "Holy See Press Office (press.vatican.va)",
-      "type": "primary"
+      "type": "official"
     },
     {
       "id": "veritatis-doc53",
       "title": "Orientações pastorais sobre a Renovação Carismática Católica (CNBB, 27.11.1994) — full text reproduction",
       "url": "https://www.veritatis.com.br/orientacoes-pastorais-sobre-a-renovacao-carismatica-catolica-rcc/",
-      "publisher": "Veritatis Splendor (independent Catholic site — reproduces the Doc 53 text)",
-      "type": "reference"
+      "publisher": "Veritatis Splendor",
+      "publisherNote": "independent Catholic site — reproduces the Doc 53 text",
+      "type": "web"
     },
     {
       "id": "ct-1991-communities",
@@ -1512,8 +1530,9 @@
       "id": "pentecosttoday-guerra-letters",
       "title": "Letters of Blessed Elena Guerra to Leo XIII — English translation (PDF)",
       "url": "https://www.pentecosttodayusa.org/wp-content/uploads/2024/05/Letters-of-Blessed-Elena-to-Leo-XIII.pdf",
-      "publisher": "Pentecost Today USA — the US national service committee for the Catholic Charismatic Renewal (movement source, sympathetic; insider history)",
-      "type": "movement"
+      "publisher": "Pentecost Today USA",
+      "publisherNote": "the US national service committee for the Catholic Charismatic Renewal — movement source, sympathetic; insider history",
+      "type": "official"
     },
     {
       "id": "pew-2014",
@@ -1526,7 +1545,8 @@
       "id": "cbn-50years",
       "title": "Fifty Years of the Catholic Charismatic Movement: 1967-2017 (Cheryl Wilcox) — print companion to the 700 Club segment",
       "url": "https://cbn.com/article/life-transformation/fifty-years-catholic-charismatic-movement-1967-2017",
-      "publisher": "CBN / The 700 Club — Protestant (Pentecostal-charismatic) broadcaster reporting on a Catholic movement; sympathetic outside perspective, not disinterested (its own founding circle appears in the story)",
+      "publisher": "CBN / The 700 Club",
+      "publisherNote": "Protestant (Pentecostal-charismatic) broadcaster reporting on a Catholic movement; sympathetic outside perspective, not disinterested (its own founding circle appears in the story)",
       "type": "news"
     },
     {
@@ -1561,7 +1581,7 @@
       "id": "souza-2008-midia",
       "title": "André Ricardo de Souza — As Investidas Católicas na Mídia (REVER, set. 2008, pp. 27–45)",
       "url": "https://www.pucsp.br/rever/rv3_2008/t_souza.pdf",
-      "publisher": "REVER — Revista de Estudos da Religião, PUC-SP (peer-reviewed academic journal)",
+      "publisher": "REVER — Revista de Estudos da Religião, PUC-SP",
       "type": "academic"
     }
   ]
