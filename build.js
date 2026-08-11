@@ -108,6 +108,12 @@ const UI = {
     factFlagTitle: 'Not yet verified against a primary source',
     footer: 'Compiled static site generated from <code>data/chronology.json</code> by <code>build.js</code>. Open data — corrections welcome via pull request.\n      Part of the Cronologia project family.',
     refsIntro: (n, a) => `${n} sources${a ? ` · ${a} with an Internet Archive fallback` : ''}. Sources span the\n      spectrum of perspectives by design; contested claims are attributed to their authors.`,
+    refTypes: {
+      news: 'news', academic: 'academic', archive: 'archive', official: 'official',
+      encyclopedia: 'encyclopedia', web: 'web', corpus: 'corpus', database: 'database',
+      video: 'video', index: 'index', book: 'book', report: 'report', legal: 'legal',
+      testimony: 'testimony', analysis: 'analysis',
+    },
     // Contested-numbers chart chrome. The per-series axis note and caption say
     // WHO reported each number and IN WHAT UNIT — the figure's whole point is
     // that the series are not comparable, so this chrome has to be as clear in
@@ -157,6 +163,12 @@ const UI = {
     factFlagTitle: 'Aún no verificado con una fuente primaria',
     footer: 'Sitio estático compilado a partir de <code>data/chronology.json</code> por <code>build.js</code>. Datos abiertos — correcciones bienvenidas mediante pull request.\n      Parte de la familia de proyectos Cronologia.',
     refsIntro: (n, a) => `${n} fuentes${a ? ` · ${a} con copia en Internet Archive` : ''}. Las fuentes abarcan el\n      espectro de perspectivas de forma deliberada; las afirmaciones controvertidas se atribuyen a sus autores.`,
+    refTypes: {
+      news: 'prensa', academic: 'académico', archive: 'archivo', official: 'oficial',
+      encyclopedia: 'enciclopedia', web: 'web', corpus: 'corpus', database: 'base de datos',
+      video: 'video', index: 'índice', book: 'libro', report: 'informe', legal: 'jurídico',
+      testimony: 'testimonio', analysis: 'análisis',
+    },
     ncAxisNote: (max, unit) => `eje: 0–${max} ${unit}`,
     ncCaptionMeta: (src, unit) => ` — reportado por ${src}, en ${unit}`,
     disclaimer: 'Traducción automática del inglés; la página en inglés es la versión de referencia.',
@@ -202,6 +214,12 @@ const UI = {
     factFlagTitle: 'Ainda não verificado com uma fonte primária',
     footer: 'Site estático compilado a partir de <code>data/chronology.json</code> por <code>build.js</code>. Dados abertos — correções bem-vindas via pull request.\n      Parte da família de projetos Cronologia.',
     refsIntro: (n, a) => `${n} fontes${a ? ` · ${a} com cópia no Internet Archive` : ''}. As fontes abrangem o\n      espectro de perspectivas de forma deliberada; afirmações controversas são atribuídas aos seus autores.`,
+    refTypes: {
+      news: 'imprensa', academic: 'acadêmico', archive: 'arquivo', official: 'oficial',
+      encyclopedia: 'enciclopédia', web: 'web', corpus: 'corpus', database: 'base de dados',
+      video: 'vídeo', index: 'índice', book: 'livro', report: 'relatório', legal: 'jurídico',
+      testimony: 'testemunho', analysis: 'análise',
+    },
     ncAxisNote: (max, unit) => `eixo: 0–${max} ${unit}`,
     ncCaptionMeta: (src, unit) => ` — reportado por ${src}, em ${unit}`,
     disclaimer: 'Tradução automática do inglês; a página em inglês é a versão de referência.',
@@ -237,43 +255,82 @@ function translator(dict) {
  * reimplementation drifted (cronologia/core#81, #82). A test asserts the two
  * visit the same set.
  */
+// Subtrees where the general rule misfires get their own allowlist. The
+// `references` array used to be skipped WHOLESALE ("never translate
+// bibliographic entries") — which was right for titles, publishers and URLs,
+// and wrong for `publisherNote`, the project's own stance prose on each
+// source, which rode inside the array and shipped in English on every
+// localized page (the tfp "IPCO (sympathetic source)" defect). Adopted from
+// the template (core#74 machinery).
+const SUBTREE_TRANSLATABLE = {
+  references: new Set(['publisherNote']),
+  // The approval ladder. `status` is deliberately ABSENT: it is a closed enum
+  // ('favourable', 'not-reached'), the renderer looks it up in STATUS_GLYPH and
+  // in the UI table, and the general walk WOULD have translated it -- `status`
+  // is in TRANSLATABLE_KEYS as prose for other datasets -- turning the value
+  // into "Investigado" and failing the localized build with "unknown status".
+  // Everything a reader actually reads is here instead; the status renders in
+  // the page's language from the UI table, keyed on the untranslated enum.
+  approvalLadder: new Set(['label', 'when', 'who', 'outcome', 'noDocument', 'heading', 'note', 'caption', 'navLabel']),
+  // >>> ADOPT: subtree-allowlists  (subtrees of this repo's dataset that are not prose)
+  // <<< ADOPT
+};
+
+/**
+ * Which key set applies to a value, given the special subtree it sits inside.
+ *
+ * `subtree` is the nearest enclosing entry of SUBTREE_TRANSLATABLE, and it is
+ * sticky: every descendant of `references` is bibliographic until a deeper
+ * entry says otherwise. `hasOwnProperty` rather than a plain lookup because a
+ * dataset key called "constructor" would otherwise resolve to Object's.
+ *
+ * Returns `[subtreeHere, keySet]` so both walks resolve it identically.
+ */
+function keysFor(key, subtree) {
+  const here = Object.prototype.hasOwnProperty.call(SUBTREE_TRANSLATABLE, key) ? key : subtree;
+  return [here, SUBTREE_TRANSLATABLE[here] || TRANSLATABLE_KEYS];
+}
+
 function collectTranslatable(data) {
   const out = [];
   const seen = new Set();
-  const walk = (val, key) => {
-    if (key === 'references') return;
-    if (Array.isArray(val)) { val.forEach((v) => walk(v, key)); return; }
-    if (val && typeof val === 'object') { for (const k of Object.keys(val)) walk(val[k], k); return; }
-    if (typeof val === 'string' && val.trim() && TRANSLATABLE_KEYS.has(key) && !seen.has(val)) {
+  const walk = (val, key, subtree) => {
+    const [here, keys] = keysFor(key, subtree);
+    if (Array.isArray(val)) { val.forEach((v) => walk(v, key, here)); return; }
+    if (val && typeof val === 'object') {
+      for (const k of Object.keys(val)) walk(val[k], k, here);
+      return;
+    }
+    if (typeof val === 'string' && val.trim() && keys.has(key) && !seen.has(val)) {
       seen.add(val);
       out.push(val);
     }
   };
-  walk(data, null);
+  walk(data, null, null);
   return out;
 }
 
 /**
  * Deep-copy `data` with every translatable prose field replaced by its
- * translation (fallback: English), and meta.language set to `lang`. The whole
- * `references` array is passed through verbatim (bibliographic data). With an
- * empty dictionary (English) the values are unchanged, so the render stays
- * byte-identical to a pre-i18n build.
+ * translation (fallback: English), and meta.language set to `lang`. Special
+ * subtrees (references, approvalLadder) translate only their allowlisted keys
+ * via SUBTREE_TRANSLATABLE. With an empty dictionary (English) the values are
+ * unchanged, so the render stays byte-identical to a pre-i18n build.
  */
 function localizeData(data, dict, lang) {
   const t = translator(dict);
-  const walk = (val, key) => {
-    if (key === 'references') return val; // never translate bibliographic entries
-    if (Array.isArray(val)) return val.map((v) => walk(v, key));
+  const walk = (val, key, subtree) => {
+    const [here, keys] = keysFor(key, subtree);
+    if (Array.isArray(val)) return val.map((v) => walk(v, key, here));
     if (val && typeof val === 'object') {
       const out = {};
-      for (const k of Object.keys(val)) out[k] = walk(val[k], k);
+      for (const k of Object.keys(val)) out[k] = walk(val[k], k, here);
       return out;
     }
-    if (typeof val === 'string' && TRANSLATABLE_KEYS.has(key)) return t(val);
+    if (typeof val === 'string' && keys.has(key)) return t(val);
     return val;
   };
-  const copy = walk(data, null);
+  const copy = walk(data, null, null);
   copy.meta = Object.assign({}, copy.meta, { language: lang });
   // `place` IS translated prose (the chronology's Place column reads in the
   // page's language), but the gazetteer behind the places map is keyed on the
@@ -1508,14 +1565,32 @@ function renderOrgCard(org, refNumById, ui) {
       </div>`;
 }
 
-function renderReference(r, n, archives) {
+// Every reference type seen outside the closed refTypes vocabulary, collected
+// across the whole build and reported once at the end (core#74).
+const UNKNOWN_REF_TYPES = new Set();
+
+function renderReference(r, n, archives, ui) {
   const snap = archives[r.url];
   const archived = snap && snap.archiveUrl
     ? ` · <a class="archive-link" href="${esc(snap.archiveUrl)}" rel="noopener noreferrer" target="_blank">🗄 archived${snap.timestamp ? ` ${esc(formatArchiveTs(snap.timestamp))}` : ''}</a>`
     : '';
+  const NOTE_INLINE_MAX = 110;
+  const note = r.publisherNote || '';
+  const inline = note && note.length <= NOTE_INLINE_MAX;
+  const pub = inline ? `${r.publisher} (${note})` : r.publisher;
+  const noteLine = note && !inline
+    ? `\n          <span class="ref-note">${esc(note)}</span>`
+    : '';
+  // `type` is a CLOSED vocabulary, not prose: it belongs in the UI table with
+  // the rest of the chrome, so a new type is a code change that surfaces as a
+  // missing label rather than a silent English word on a Portuguese page.
+  if (ui && ui.refTypes && r.type && !Object.prototype.hasOwnProperty.call(ui.refTypes, r.type)) {
+    UNKNOWN_REF_TYPES.add(r.type);
+  }
+  const type = (ui && ui.refTypes && ui.refTypes[r.type]) || r.type;
   return `        <li id="ref-${n}">
           <a href="${esc(r.url)}" rel="noopener noreferrer" target="_blank">${esc(r.title)}</a>${archived}
-          <span class="ref-meta">${esc(r.publisher)} · ${esc(r.type)}</span>
+          <span class="ref-meta">${esc(pub)} · ${esc(type)}</span>${noteLine}
         </li>`;
 }
 
@@ -1660,7 +1735,7 @@ ${disambigCards}
       <h2>${esc(ui.referencesHeading)}</h2>
       <p class="section-intro">${ui.refsIntro(references.length, archivedRefs)}</p>
       <ol class="references">
-${references.map((r, i) => renderReference(r, i + 1, archives)).join('\n')}
+${references.map((r, i) => renderReference(r, i + 1, archives, ui)).join('\n')}
       </ol>
     </section>
   </main>
@@ -1702,6 +1777,16 @@ function main() {
     `${data.events.length} events, ${data.figures.length} figures, ` +
     `${data.references.length} references, ${archivedRefs} with archive fallback.`
   );
+  // Named, not counted, and ALL of them: a report that says "3 problems" sends
+  // you looking, and one that says which three is actionable in the same run.
+  if (UNKNOWN_REF_TYPES.size) {
+    console.warn(
+      `WARNING: ${UNKNOWN_REF_TYPES.size} reference type(s) are outside the closed refTypes ` +
+      `vocabulary and render as raw English on every localized page: ` +
+      `${[...UNKNOWN_REF_TYPES].sort().map((t) => JSON.stringify(t)).join(', ')}. ` +
+      `Retype them, or move the characterisation into publisherNote, which IS translated (core#74).`
+    );
+  }
 }
 
 // Run the build only when invoked directly; when required (tests) just expose
@@ -1718,6 +1803,7 @@ module.exports = {
   layoutBranchTimeline, renderBranchTimeline, BT_GEOM,
   layoutNumbersChart, renderNumbersChart,
   renderPage,
-  LOCALES, ROUTES, OG_LOCALE, UI, TRANSLATABLE_KEYS, loadDict, siteBase, translator, localizeData,
+  LOCALES, ROUTES, OG_LOCALE, UI, TRANSLATABLE_KEYS, SUBTREE_TRANSLATABLE, keysFor,
+  UNKNOWN_REF_TYPES, renderReference, loadDict, siteBase, translator, localizeData,
   alternates, seoHead, langSwitcher, renderRootStub, renderSitemap, renderRobots,
 };
