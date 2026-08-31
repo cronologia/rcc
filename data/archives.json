@@ -1,6 +1,6 @@
 {
   "generatedBy": "scripts/archive-refs.js",
-  "updatedAt": "2026-08-24",
+  "updatedAt": "2026-08-31",
   "snapshots": {
     "http://wiki.cancaonova.com/index.php/Comunidade_Obra_de_Maria": {
       "refId": "wikicn-obrademaria",
@@ -277,6 +277,12 @@
       "archiveUrl": "https://web.archive.org/web/20250724011927/https://www.laityfamilylife.va/content/laityfamilylife/en/news/2019/entra-in-azione-charis--il-servizio-unico-internazionale-al-rinn.html",
       "timestamp": "20250724011927",
       "checkedAt": "2026-07-24"
+    },
+    "https://www.pentecosttodayusa.org/2018/charis-moderator-and-members-of-the-international-service-of-communion-are-announced/": {
+      "refId": "pentecosttoday-charis",
+      "archiveUrl": "https://web.archive.org/web/20260824071826/https://www.pentecosttodayusa.org/2018/charis-moderator-and-members-of-the-international-service-of-communion-are-announced/",
+      "timestamp": "20260824071826",
+      "checkedAt": "2026-08-31"
     },
     "https://www.pentecosttodayusa.org/malines-documents/": {
       "refId": "pentecosttoday-malines",
