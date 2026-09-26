@@ -1,7 +1,7 @@
 {
   "_meta": {
     "targetLang": "es",
-    "coverage": "213/213",
+    "coverage": "216/216",
     "generatedBy": "LLM translation (Claude, model claude-opus-5) during an agent session, 2026-07-25",
     "method": "No TRANSLATE_ENDPOINT backend is configured for this project. scripts/translate.js normalizes this cache and reports coverage, but it did NOT author these strings — an LLM did. Re-running translate.js against a configured MT backend would REPLACE them with different (and for this subject matter, likely weaker) output. See cronologia/core#9.",
     "note": "GENERATED machine-translation cache — do not hand-edit; regenerate instead. English is authoritative and every non-English page carries a visible machine-translated disclaimer.",
@@ -9,6 +9,8 @@
     "humanReviewed": false
   },
   "strings": {
+    "1978": "1978",
+    "1982": "1982",
     "1990": "1990",
     "% share": "% de la población",
     "'Músicas para Louvar ao Senhor', recorded at Masses of the young priest Marcelo Rossi and released by PolyGram, sells over 3.3 million copies — the best-selling album in Brazilian phonographic history — inaugurating the era of stadium Masses and charismatic mass media.": "'Músicas para Louvar ao Senhor', grabado en las misas del joven sacerdote Marcelo Rossi y publicado por PolyGram, vende más de 3,3 millones de copias — el álbum más vendido de la historia fonográfica brasileña — inaugurando la era de las misas en estadios y de los medios de comunicación de masas carismáticos.",
@@ -221,6 +223,7 @@
     "verify against CNBB original": "verificar con el original de la CNBB",
     "independent Catholic site — reproduces the Doc 53 text": "sitio católico independiente — reproduce el texto del Doc 53",
     "the US national service committee for the Catholic Charismatic Renewal — movement source, sympathetic; insider history": "el comité nacional de servicio de la Renovación Carismática Católica en Estados Unidos — fuente del movimiento, simpatizante; historia desde dentro",
-    "Protestant (Pentecostal-charismatic) broadcaster reporting on a Catholic movement; sympathetic outside perspective, not disinterested (its own founding circle appears in the story)": "emisora protestante (pentecostal-carismática) que informa sobre un movimiento católico; perspectiva externa simpatizante, no desinteresada (su propio círculo fundador aparece en la historia)"
+    "Protestant (Pentecostal-charismatic) broadcaster reporting on a Catholic movement; sympathetic outside perspective, not disinterested (its own founding circle appears in the story)": "emisora protestante (pentecostal-carismática) que informa sobre un movimiento católico; perspectiva externa simpatizante, no desinteresada (su propio círculo fundador aparece en la historia)",
+    "1980 / 1990": "1980 / 1990"
   }
 }
