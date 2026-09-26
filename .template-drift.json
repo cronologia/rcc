@@ -1,0 +1,9 @@
+{
+  "_about": "Template build.js functions this site customises on purpose. Checked by cronologia/core tools/build-drift.py: an undeclared difference is drift; when the template's version of a declared function changes, the declaration goes STALE until the change is ported here and `base` is bumped (python3 tools/build-drift.py --hash <name>).",
+  "customized": {
+    "renderPage": {
+      "reason": "page order: the storylines table opens the page beside the spine; the diffusion timeline precedes the genealogy, in page and nav",
+      "base": "45fda29b9eea"
+    }
+  }
+}
