@@ -35,6 +35,7 @@ data/i18n/{pt,es}.json    GENERATED machine-translation caches (English source s
                           -> translation); owned by scripts/translate.js, never hand-edited
 src/styles.css            Stylesheet (copied into the build)
 src/river.js             Time-river filters, find box and reading window (core#108); copied into the build only when meta.layout is "river"
+.template-drift.json      The template build.js functions this site customises on purpose, with reasons (checked by core tools/build-drift.py)
 src/world-land.json       COMMITTED world basemap for the placesMap renderer (Natural
                           Earth 1:110m, public domain; provenance in its _meta)
 scripts/validate-data.js  Schema check (runs in CI before the build); warns on place
