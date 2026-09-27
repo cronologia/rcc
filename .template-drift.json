@@ -3,7 +3,17 @@
   "customized": {
     "renderPage": {
       "reason": "page order: the storylines table opens the page beside the spine; the diffusion timeline precedes the genealogy, in page and nav",
-      "base": "45fda29b9eea"
+      "base": "ad7f7a46fe89"
+    }
+  },
+  "tests": {
+    "link-health.test.js": {
+      "reason": "rcc's check-links.js names the site's own repository in its User-Agent, not the organisation",
+      "base": "37f289b13674"
+    },
+    "viz-renderers.test.js": {
+      "reason": "rcc customises renderPage (section order, numbers chart), which the template test's page-order assertions pin",
+      "base": "49113167f361"
     }
   }
 }
